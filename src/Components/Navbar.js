@@ -11,33 +11,76 @@ export default function Navbar(props) {
   const navLinkClass = ({ isActive }) => isActive ? 'active' : ''
 
   return (
-    <header id="header" className={`header d-flex align-items-center sticky-top${mobileNavActive ? ' mobile-nav-active' : ''}`}>
-    <div className="container-fluid container-xl position-relative d-flex align-items-center">
+    <header id="header" className="modern-header sticky-top">
 
-      <Link to="/home" className="logo d-flex align-items-center me-auto">
-        <img src={myLogo} alt="Logo"/>
-        <h1>CareerForge Institute</h1>
+  <div className="container-fluid container-xl">
+
+    <div className="modern-navbar">
+
+      {/* LOGO */}
+
+      <Link to="/home" className="modern-logo">
+
+        <img src={myLogo} alt="CareerForge Logo" />
+
+        <div className="logo-text">
+
+          <h1>CareerForge</h1>
+          <span>Institute</span>
+
+        </div>
+
       </Link>
 
-      <nav id="navmenu" className="navmenu">
-        <ul>
-          <li className='transitionOne'><NavLink to="/home" className={navLinkClass} onClick={closeMobileNav}>Home<br/></NavLink></li>
-          <li className='transitionOne'><NavLink to="/about" className={navLinkClass} onClick={closeMobileNav}>About</NavLink></li>
-          <li className='transitionOne'><NavLink to="/courses" className={navLinkClass} onClick={closeMobileNav}>Courses</NavLink></li>
-          <li className='transitionOne'><NavLink to="/payment" className={navLinkClass} onClick={closeMobileNav}>Payment</NavLink></li>
-          <li className='transitionOne'><NavLink to="/contact" className={navLinkClass} onClick={closeMobileNav}>Contact</NavLink></li>
-        </ul>
-        <i className="mobile-nav-toggle d-xl-none bi bi-list" onClick={toggleMobileNav}></i>
+      {/* NAVIGATION */}
+
+      <nav className="modern-nav">
+
+        <NavLink to="/home" className="nav-item">
+          Home
+        </NavLink>
+
+        <NavLink to="/about" className="nav-item">
+          About
+        </NavLink>
+
+        <NavLink to="/courses" className="nav-item">
+          Courses
+        </NavLink>
+
+        <NavLink to="/payment" className="nav-item">
+          Payment
+        </NavLink>
+
+        <NavLink to="/contact" className="nav-item">
+          Contact
+        </NavLink>
+
       </nav>
 
-      <a className="btn-getstarted" href='/' data-bs-toggle="modal" data-bs-target="#exampleModal">Free Demo</a>
-      </div>
-      {/* <button className="modal-dialog modal-dialog-centered"> Free Demo</button>
-    
-              Button trigger modal
-    <button type="button" className="btn-getstarted" data-bs-toggle="modal" data-bs-target="#exampleModal">Free Demo</button> */}
+      {/* CTA BUTTON */}
 
-  </header>
+      <a
+        className="modern-demo-btn"
+        href="/"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <i className="bi bi-lightning-charge-fill"></i>
+        Free Career Guidance
+      </a>
+
+      {/* MOBILE ICON */}
+
+      <div className="mobile-menu-icon d-xl-none">
+        <i className="bi bi-list"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
   )
 }
 

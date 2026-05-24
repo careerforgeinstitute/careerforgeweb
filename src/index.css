@@ -2586,3 +2586,566 @@ AI SECTION
   }
 
 }
+
+/* =====================================================
+MODERN NAVBAR
+===================================================== */
+
+.modern-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 14px 0;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.modern-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.modern-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.modern-logo img {
+  height: 52px;
+  width: auto;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #061a28;
+  line-height: 1;
+}
+
+.logo-text span {
+  font-size: 13px;
+  color: #1476b9;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+
+.modern-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item {
+  position: relative;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #061a28;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background: rgba(20,118,185,0.08);
+  color: #1476b9;
+}
+
+.nav-item.active {
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #49b8ff
+    );
+
+  color: white !important;
+  box-shadow:
+    0 10px 25px rgba(20,118,185,0.25);
+}
+
+/* CTA BUTTON */
+
+.modern-demo-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 24px;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #4ec3ff
+    );
+
+  color: white;
+  font-weight: 700;
+  box-shadow:
+    0 10px 25px rgba(20,118,185,0.25);
+
+  transition: all 0.3s ease;
+}
+
+.modern-demo-btn:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.35);
+
+  color: white;
+}
+
+.modern-demo-btn i {
+  font-size: 18px;
+}
+
+/* MOBILE */
+
+.mobile-menu-icon {
+  font-size: 30px;
+  color: #061a28;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+
+  .modern-nav {
+    display: none;
+  }
+
+  .modern-demo-btn {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .logo-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .modern-logo img {
+    height: 45px;
+  }
+
+}
+
+/* =====================================================
+MODERN DEMO MODAL
+===================================================== */
+
+.modern-modal-content {
+  overflow: hidden;
+  border: none;
+  border-radius: 35px;
+  background: white;
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.18);
+}
+
+/* LEFT PANEL */
+
+.modern-modal-left {
+  position: relative;
+  height: 100%;
+  padding: 50px 40px;
+  background:
+    linear-gradient(
+      135deg,
+      #061a28,
+      #0d2f45,
+      #1476b9
+    );
+
+  color: white;
+  overflow: hidden;
+}
+
+.modal-glow {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(126,215,255,0.2);
+  border-radius: 50%;
+  filter: blur(70px);
+  top: -50px;
+  right: -50px;
+}
+
+.modal-badge {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.modern-modal-left h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: white;
+}
+
+.modern-modal-left h2 span {
+  color: #7ed7ff;
+}
+
+.modern-modal-left p {
+  margin-top: 25px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.9;
+}
+
+.modal-points {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modal-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.modal-points i {
+  color: #7ed7ff;
+}
+
+/* RIGHT SIDE */
+
+.modern-modal-right {
+  padding: 40px;
+}
+
+.modern-modal-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #061a28;
+}
+
+.modern-modal-subtitle {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* INPUTS */
+
+.modern-input-group label {
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+  color: #061a28;
+}
+
+.modern-input {
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 16px 18px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #f9fbfd;
+}
+
+.modern-input:focus {
+  border-color: #1476b9;
+  box-shadow:
+    0 0 0 4px rgba(20,118,185,0.12);
+  background: white;
+}
+
+/* BUTTON */
+
+.modern-submit-btn {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.modern-submit-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.3);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .modern-modal-right {
+    padding: 30px 20px;
+  }
+
+  .modern-modal-title {
+    font-size: 1.6rem;
+  }
+
+}
+
+/* =====================================================
+MODERN ABOUT PAGE
+===================================================== */
+
+.modern-about-hero {
+  position: relative;
+  padding: 140px 0 120px;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061a28,
+      #0f2f45,
+      #1476b9
+    );
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255,255,255,0.08),
+      transparent 30%
+    );
+}
+
+.about-badge {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+}
+
+.about-hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+.about-hero-title span {
+  color: #7ed7ff;
+}
+
+.about-hero-description {
+  color: rgba(255,255,255,0.82);
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.9;
+  font-size: 1.1rem;
+}
+
+.about-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.about-stat-card {
+  background: rgba(255,255,255,0.08);
+  padding: 25px 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(14px);
+  min-width: 220px;
+}
+
+.about-stat-card h3 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.about-stat-card p {
+  color: rgba(255,255,255,0.7);
+  margin: 0;
+}
+
+/* CONTENT */
+
+.modern-about-image-wrapper {
+  position: relative;
+}
+
+.modern-about-image {
+  border-radius: 30px;
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.15);
+}
+
+.floating-about-card {
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+
+  background: white;
+  border-radius: 20px;
+  padding: 18px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
+
+  font-weight: 700;
+}
+
+.floating-about-card i {
+  color: #1476b9;
+  font-size: 22px;
+}
+
+.content-badge {
+  background: rgba(20,118,185,0.1);
+  color: #1476b9;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.modern-about-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.modern-about-title span {
+  color: #1476b9;
+}
+
+.modern-about-description {
+  color: #666;
+  line-height: 1.9;
+  font-size: 1.08rem;
+}
+
+.modern-about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modern-about-feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: #f8fbff;
+  padding: 18px 20px;
+  border-radius: 18px;
+}
+
+.modern-about-feature i {
+  color: #1476b9;
+  font-size: 20px;
+}
+
+/* MISSION VISION */
+
+.mission-card {
+  height: 100%;
+  padding: 40px;
+  border-radius: 30px;
+
+  background: white;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.06);
+
+  transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+}
+
+.mission-icon {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 30px;
+
+  margin-bottom: 25px;
+}
+
+.mission-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mission-card p {
+  color: #666;
+  line-height: 1.9;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .about-hero-title {
+    font-size: 2.3rem;
+  }
+
+  .modern-about-title {
+    font-size: 2rem;
+  }
+
+}
