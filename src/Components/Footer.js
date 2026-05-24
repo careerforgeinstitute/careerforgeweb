@@ -32,7 +32,7 @@ export default function footer() {
             <h6><strong>Address:</strong> <span>C1-2401, Nyati Elysia, RiverFront RD</span></h6>
             <h6><span> Kharadi, Pune, Maharashtra 411014</span></h6>
             <h6 className="mt-3"><strong>Phone:</strong> <span>+91 9175914828</span></h6>
-            <h6><strong>Email:</strong> <span>careerforgeinstitute@gmail.com</span></h6>
+            <h6><strong>Email:</strong> <span>info@careerforgeinstitute.in</span></h6>
           </div>
           <div className="social-links d-flex mt-4">
             {/* <Link to="/"><i className="bi bi-facebook"></i></a> */}

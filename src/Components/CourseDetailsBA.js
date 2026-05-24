@@ -1,6 +1,7 @@
 import React from 'react'
 /* import contentImage from '../Img/content.jpeg' */
 import coursedetailsImage from '../Img/course-details.jpg'
+import CareerForgeCertificates from './CareerForgeCertificates';
 import { Link } from 'react-router-dom'
 /* import Form from './Form' */
 
@@ -130,6 +131,7 @@ export default function CourseDetailsBA() {
                   <a href="mailto:info@careerforgeinstitute.in" style={{color: '#0d6efd',fontWeight: '600'}}>info@careerforgeinstitute.in</a>
                 </p>
               </div>
+              
             </div>
 
             {/* RIGHT — Sidebar */}
@@ -173,6 +175,9 @@ export default function CourseDetailsBA() {
                         <Form/>
               </div> */}
 
+            </div>
+            <div className="container mt-3 p-0" style={{ maxHeight: "60vh" }}>
+                <CareerForgeCertificates />
             </div>
           </div>
         </div>

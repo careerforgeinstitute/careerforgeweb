@@ -1,6 +1,7 @@
 import React from 'react'
 /* import contentImage from '../Img/content.jpeg' */
 import coursedetailsImage from '../Img/course-details.jpg'  // replace with an agile-specific image if you have one
+import CareerForgeCertificates from './CareerForgeCertificates';
 import { Link } from 'react-router-dom'
 
 export default function CourseDetailsAgile() {
@@ -179,6 +180,9 @@ export default function CourseDetailsAgile() {
                 </form>
               </div> */}
 
+            </div>
+            <div className="container mt-3 p-0" style={{ maxHeight: "60vh" }}>
+               <CareerForgeCertificates />
             </div>
           </div>
         </div>

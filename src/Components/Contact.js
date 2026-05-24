@@ -57,7 +57,7 @@ export default function Contact() {
               <i className="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>careerforgeinstitute@gmail.com</p>
+                <p>info@careerforgeinstitute.in</p>
               </div>
             </div>
 
