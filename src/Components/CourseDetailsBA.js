@@ -176,7 +176,7 @@ export default function CourseDetailsBA() {
               </div> */}
 
             </div>
-            <div className="container mt-3 p-0" style={{ maxHeight: "60vh" }}>
+            <div className="container mt-3 p-0" style={{ maxHeight: "80vh" }}>
                 <CareerForgeCertificates />
             </div>
           </div>
