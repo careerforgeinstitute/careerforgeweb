@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { NavLink, Link } from 'react-router-dom'
 import myLogo from '../logo.png'
 
-
-
 export default function Navbar(props) {
+  const [mobileNavActive, setMobileNavActive] = useState(false)
+
+  const toggleMobileNav = () => setMobileNavActive((active) => !active)
+  const closeMobileNav = () => setMobileNavActive(false)
+  const navLinkClass = ({ isActive }) => isActive ? 'active' : ''
+
   return (
-    <header id="header" className="header d-flex align-items-center sticky-top">
+    <header id="header" className={`header d-flex align-items-center sticky-top${mobileNavActive ? ' mobile-nav-active' : ''}`}>
     <div className="container-fluid container-xl position-relative d-flex align-items-center">
 
       <Link to="/home" className="logo d-flex align-items-center me-auto">
@@ -17,13 +21,13 @@ export default function Navbar(props) {
 
       <nav id="navmenu" className="navmenu">
         <ul>
-          <li className='transitionOne'><NavLink to="/home" activeclassName="active">Home<br/></NavLink></li>
-          <li className='transitionOne'><NavLink to="/about" activeclassName="active">About</NavLink></li>
-          <li className='transitionOne'><NavLink to="/courses" activeclassName="active">Courses</NavLink></li>
-          <li className='transitionOne'><NavLink to="/payment" activeclassName="active">Payment</NavLink></li>
-          <li className='transitionOne'><NavLink to="/contact" activeclassName="active">Contact</NavLink></li>
+          <li className='transitionOne'><NavLink to="/home" className={navLinkClass} onClick={closeMobileNav}>Home<br/></NavLink></li>
+          <li className='transitionOne'><NavLink to="/about" className={navLinkClass} onClick={closeMobileNav}>About</NavLink></li>
+          <li className='transitionOne'><NavLink to="/courses" className={navLinkClass} onClick={closeMobileNav}>Courses</NavLink></li>
+          <li className='transitionOne'><NavLink to="/payment" className={navLinkClass} onClick={closeMobileNav}>Payment</NavLink></li>
+          <li className='transitionOne'><NavLink to="/contact" className={navLinkClass} onClick={closeMobileNav}>Contact</NavLink></li>
         </ul>
-        <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i className="mobile-nav-toggle d-xl-none bi bi-list" onClick={toggleMobileNav}></i>
       </nav>
 
       <a className="btn-getstarted" href='/' data-bs-toggle="modal" data-bs-target="#exampleModal">Free Demo</a>
