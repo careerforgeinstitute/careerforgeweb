@@ -84,7 +84,7 @@ export default function footer() {
             </a>
 
             <a
-              href="https://wa.me/919175294828"
+              href="https://wa.me/919175914828"
               target="_blank"
               rel="noreferrer"
             >
@@ -172,7 +172,7 @@ export default function footer() {
           </p>
 
           <a
-            href="https://wa.me/919175294828"
+            href="https://wa.me/919175914828"
             target="_blank"
             rel="noreferrer"
             className="footer-whatsapp-btn"

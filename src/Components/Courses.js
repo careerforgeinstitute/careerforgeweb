@@ -7,25 +7,42 @@ export default function Courses() {
   return (
      <>
    {/* Page Title */}
-   <div className="page-title" data-aos="fade">
-     <nav className="breadcrumbs">
-       <div className="container">
-         <ol>
-           <li><a href="index.html">Home</a></li>
-           <li className="current">Courses</li>
-         </ol>
-       </div>
-     </nav>
-     <div className="heading">
-       <div className="container">
-         <div className="row d-flex justify-content-center text-center">
-           <div className="col-lg-8">
-             <h1>Courses</h1>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
+   {/* =======================================================
+MODERN COURSES HERO
+======================================================= */}
+
+<section className="modern-courses-hero">
+
+  <div className="courses-hero-overlay"></div>
+
+  <div className="container position-relative z-3">
+
+    <div className="row justify-content-center text-center">
+
+      <div className="col-lg-9">
+
+        <span className="courses-badge">
+          INDUSTRY-READY TRAINING PROGRAMS
+        </span>
+
+        <h1 className="courses-title mt-4">
+          Learn the Skills Companies Expect from
+          <span> Modern Business Analysts</span>
+        </h1>
+
+        <p className="courses-description mt-4">
+          Practical Business Analysis, Agile and AI-powered
+          training programs designed for freshers,
+          career switchers and working professionals.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
    {/* Courses Section */}
    <section id="courses" className="courses section">
@@ -34,8 +51,8 @@ export default function Courses() {
 
          {/* Course 1 — Core Business Analysis */}
          <div className="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-           <div className="course-item">
-             <img src={course1Image} className="img-fluid" alt="Core Business Analysis" />
+           <div className="modern-course-card">
+             <img src={course1Image} className="img-fluid modern-course-image" alt="Core Business Analysis" />
              <div className="course-content">
 
                <div className="d-flex justify-content-between align-items-center mb-3">
@@ -45,17 +62,32 @@ export default function Courses() {
 
                <h3><Link to="/course-details-ba">Core Business Analysis</Link></h3>
                <p className="description">
-                 A comprehensive 6-week program covering stakeholder management, requirements
-                 documentation, process modelling, Visio, Lucidchart, Gen AI tools, and
-                 career readiness — built for anyone transitioning into a BA role.
-               </p>
+                  Learn the real-world Business Analyst skills
+                  used inside IT companies — including requirement gathering,
+                  stakeholder communication, process modelling,
+                  Agile documentation, Visio, Lucidchart and AI-powered workflows.
 
-               <div className="d-flex justify-content-between align-items-center mt-3">
-                 <span className="badge bg-success">6 Weeks · 12 Sessions</span>
-                 <Link to="/course-details-ba" className="btn btn-sm btn-outline-success">
-                   View Details →
-                 </Link>
-               </div>
+                  Designed to help freshers and professionals become job-ready Business Analysts.
+                </p>
+
+               <div className="course-footer mt-4">
+
+  <div className="course-badges">
+
+    <span className="modern-course-badge">
+      6 Weeks · 12 Sessions
+    </span>
+
+  </div>
+
+  <Link
+    to="/course-details-ba"
+    className="modern-course-btn"
+  >
+    View Details →
+  </Link>
+
+</div>
 
              </div>
            </div>
@@ -63,8 +95,8 @@ export default function Courses() {
 
          {/* Course 2 — Agile & Scrum */}
          <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-           <div className="course-item">
-             <img src={course2Image} className="img-fluid" alt="Agile and Scrum for BAs" />
+           <div className="modern-course-card">
+             <img src={course2Image} className="img-fluid modern-course-image" alt="Agile and Scrum for BAs" />
              <div className="course-content">
 
                <div className="d-flex justify-content-between align-items-center mb-3">
@@ -74,19 +106,35 @@ export default function Courses() {
 
                <h3><Link to="/course-details-agile">Agile &amp; Scrum for BAs</Link></h3>
                <p className="description">
-                 A focused 4-week program covering Agile fundamentals, Scrum framework,
-                 Kanban, JIRA, Confluence, backlog management, sprint simulations and
-                 Gen AI tools for Agile BA work.
+                  Learn Agile and Scrum the way real software teams work in IT companies.
+
+                  Gain practical experience with Scrum ceremonies,
+                  sprint planning, backlog management, Jira workflows,
+                  Confluence collaboration and AI tools for Agile BA work.
                </p>
 
-               <div className="d-flex justify-content-between align-items-center mt-3">
-                 <span className="badge bg-primary">4 Weeks · 8 Sessions</span>
-                 <span className="badge bg-primary">1 Bonus Session</span>
-                 
-                 <Link to="/course-details-agile" className="btn btn-sm btn-outline-primary">
-                   View Details →
-                 </Link>
-               </div>
+               <div className="course-footer mt-4">
+
+  <div className="course-badges">
+
+    <span className="modern-course-badge">
+      4 Weeks · 8 Sessions
+    </span>
+
+    <span className="modern-course-badge">
+      1 Bonus Session
+    </span>
+
+  </div>
+
+  <Link
+    to="/course-details-agile"
+    className="modern-course-btn"
+  >
+    View Details →
+  </Link>
+
+</div>
 
              </div>
            </div>
