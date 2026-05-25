@@ -1,6 +1,6 @@
 import React from 'react'
 import myImage from '../about-2.jpg'
-import { Link } from 'react-router-dom'
+ 
 
 export default function About() {
   return (

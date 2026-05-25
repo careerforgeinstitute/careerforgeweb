@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink, Link } from 'react-router-dom'
 import myLogo from '../logo.png'
 
 export default function Navbar(props) {
-  const [mobileNavActive, setMobileNavActive] = useState(false)
-
-  const toggleMobileNav = () => setMobileNavActive((active) => !active)
-  const closeMobileNav = () => setMobileNavActive(false)
-  const navLinkClass = ({ isActive }) => isActive ? 'active' : ''
+  
 
   return (
     <header id="header" className="modern-header sticky-top">
