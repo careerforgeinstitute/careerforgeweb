@@ -1,106 +1,193 @@
 import React from 'react'
-import Form from './Form' 
-import { Link } from 'react-router-dom'
+import Form from './Form'
 
 
 
 export default function Contact() {
   return (
     <>
-    <div className="page-title" data-aos="fade">
-      <nav className="breadcrumbs">
-        <div className="container">
-          <ol>
-            <li><Link to="/">Home</Link></li>
-            <li className="current">Contact</li>
-          </ol>
-        </div>
-      </nav>
-      <div className="heading">
-        <div className="container">
-          <div className="row d-flex justify-content-center text-center">
-            <div className="col-lg-8">
-              <h1>Contact</h1>
-              {/* <p className="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p> */}
-            </div>
-          </div>
-        </div>
-      </div> 
-    </div>
-    <br/>
-    <br/>
+    {/* =======================================================
+MODERN CONTACT HERO
+======================================================= */}
 
-    <section id="contact" className="contact section">
-      <div className="container" data-aos="fade-up" data-aos-delay="100">
+<section className="modern-contact-hero">
 
-        <div className="row gy-4">
+  <div className="contact-hero-overlay"></div>
 
-          <div className="col-lg-4">
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i className="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <h6>C1-2401, Nyati Elysia, RiverFront RD</h6>
-                <h6>Kharadi, Pune 411014</h6>
-              </div>
-            </div>
+  <div className="container position-relative z-3">
 
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i className="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+91 9175914828</p>
-              </div>
-            </div>
+    <div className="row justify-content-center text-center">
 
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i className="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@careerforgeinstitute.in</p>
-              </div>
-            </div>
+      <div className="col-lg-9">
 
+        <span className="contact-badge">
+          LET’S CONNECT
+        </span>
+
+        <h1 className="contact-title mt-4">
+          Start Your Journey Toward Becoming
+          a <span>Modern Business Analyst</span>
+        </h1>
+
+        <p className="contact-description mt-4">
+          Whether you're a fresher, career switcher or working professional,
+          we’ll help you understand the roadmap to becoming
+          an industry-ready Business Analyst.
+        </p>
+
+        <div className="contact-hero-cards mt-5">
+
+          <div className="contact-mini-card">
+            <i className="bi bi-kanban-fill"></i>
+            <span>Agile + Scrum</span>
           </div>
 
-          <div className="col-lg-8">
-            <Form/>
-            {/* <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div className="row gy-4">
+          <div className="contact-mini-card">
+            <i className="bi bi-robot"></i>
+            <span>AI for BAs</span>
+          </div>
 
-                <div className="col-md-6">
-                  <input type="text" name="name" className="form-control" placeholder="Your Name" required/>
-                </div>
-
-                <div className="col-md-6 ">
-                  <input type="email" className="form-control" name="email" placeholder="Your Email" required/>
-                </div>
-
-                <div className="col-md-12">
-                  <input type="text" className="form-control" name="subject" placeholder="Subject" required/>
-                </div>
-
-                <div className="col-md-12">
-                  <textarea className="form-control" name="message" rows="6" placeholder="Message"></textarea>
-                </div>
-
-                <div className="col-md-12 text-center">
-                  <div className="loading">Loading</div>
-                  <div className="error-message"></div>
-                  <div className="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit" className='float-end'>Send Message</button>
-                </div>
-
-              </div>
-            </form> */}
+          <div className="contact-mini-card">
+            <i className="bi bi-person-workspace"></i>
+            <span>Industry Mentorship</span>
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </div>
+
+  </div>
+
+</section>
+<section className="modern-contact-section section">
+
+  <div className="container">
+
+    <div className="row gy-5 align-items-stretch">
+
+      {/* LEFT SIDE */}
+
+      <div className="col-lg-5">
+
+        <div className="modern-contact-info">
+
+          <span className="info-badge">
+            CONTACT INFORMATION
+          </span>
+
+          <h2 className="info-title mt-4">
+            Let’s Discuss Your Career Goals
+          </h2>
+
+          <p className="info-description mt-4">
+            Have questions about Business Analysis,
+            Agile training or AI-powered BA skills?
+            Reach out and we’ll guide you.
+          </p>
+
+          {/* ADDRESS */}
+
+          <div className="modern-info-card">
+
+            <div className="modern-info-icon">
+              <i className="bi bi-geo-alt-fill"></i>
+            </div>
+
+            <div>
+              <h4>Address</h4>
+
+              <p>
+                C1-2401, Nyati Elysia,
+                RiverFront Road,
+                Kharadi, Pune 411014
+              </p>
+            </div>
+
+          </div>
+
+          {/* PHONE */}
+
+          <div className="modern-info-card">
+
+            <div className="modern-info-icon">
+              <i className="bi bi-telephone-fill"></i>
+            </div>
+
+            <div>
+              <h4>Call Us</h4>
+
+              <p>+91 9175914828</p>
+            </div>
+
+          </div>
+
+          {/* EMAIL */}
+
+          <div className="modern-info-card">
+
+            <div className="modern-info-icon">
+              <i className="bi bi-envelope-fill"></i>
+            </div>
+
+            <div>
+              <h4>Email Us</h4>
+
+              <p>info@careerforgeinstitute.in</p>
+            </div>
+
+          </div>
+
+          {/* WHATSAPP BUTTON */}
+
+          <a
+            href="https://wa.me/919175914828"
+            target="_blank"
+            rel="noreferrer"
+            className="whatsapp-contact-btn"
+          >
+            <i className="bi bi-whatsapp"></i>
+            Chat on WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+      {/* RIGHT SIDE */}
+
+      <div className="col-lg-7">
+
+        <div className="modern-form-wrapper">
+
+          <div className="form-top-content">
+
+            <span className="form-badge">
+              FREE CAREER GUIDANCE
+            </span>
+
+            <h2 className="form-title mt-3">
+              Book a Free Consultation
+            </h2>
+
+            <p className="form-description">
+              Tell us about your background and career goals.
+            </p>
+
+          </div>
+
+          <Form/>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
     </>
   )
 }
