@@ -4506,3 +4506,758 @@ SLIDE-IN MOBILE SIDEBAR
   }
 
 }
+
+/* =====================================================
+MODERN ABOUT BA SECTION
+===================================================== */
+
+.tabs.section {
+  position: relative;
+
+  padding: 120px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbff,
+      #ffffff
+    );
+}
+
+/* HEADING */
+
+.modern-ba-heading {
+  margin-bottom: 70px;
+}
+
+.modern-section-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  background: rgba(20,118,185,0.1);
+
+  color: #1476b9;
+
+  font-weight: 700;
+}
+
+.modern-ba-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+
+  color: #061a28;
+
+  line-height: 1.2;
+}
+
+.modern-ba-title span {
+  color: #1476b9;
+}
+
+.modern-ba-subtitle {
+  max-width: 850px;
+
+  margin: auto;
+
+  line-height: 1.9;
+
+  color: #666;
+
+  font-size: 1.08rem;
+}
+
+/* MODERN TABS */
+
+.modern-ba-tabs {
+  gap: 14px;
+}
+
+/* MODERN TAB BUTTONS */
+
+/* .modern-ba-tabs {
+  gap: 18px;
+} */
+
+.modern-ba-tab-link {
+  border: none !important;
+
+  min-height: 78px;
+
+  padding: 18px 24px !important;
+
+  border-radius: 22px !important;
+
+  background: white !important;
+
+  color: #061a28 !important;
+
+  font-weight: 700;
+
+  font-size: 17px;
+
+  display: flex;
+  align-items: center;
+
+  line-height: 1.5;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.05);
+
+  transition: all 0.3s ease;
+}
+
+.modern-ba-tab-link:hover {
+  transform: translateX(6px);
+
+  background: rgba(20,118,185,0.05) !important;
+}
+
+.modern-ba-tab-link.active {
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    ) !important;
+
+  color: white !important;
+
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.22);
+}
+
+/* FIX BOOTSTRAP CONFLICT */
+
+.modern-ba-tabs .nav-link {
+  width: 100%;
+}
+
+/* CONTENT AREA */
+
+.modern-ba-content {
+  background: white;
+
+  border-radius: 35px;
+
+  padding: 40px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.06);
+}
+
+/* TEXT CARD */
+
+.modern-ba-text-card {
+  display: flex;
+  align-items: center;
+}
+
+.modern-ba-text-card p {
+  font-size: 1.08rem;
+
+  line-height: 2;
+
+  color: #555;
+}
+
+/* IMAGE */
+
+.modern-ba-image {
+  border-radius: 28px;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.08);
+
+  transition: all 0.4s ease;
+}
+
+.modern-ba-image:hover {
+  transform: translateY(-8px);
+}
+
+/* LISTS */
+
+.modern-ba-text-card ul {
+  margin-top: 18px;
+}
+
+.modern-ba-text-card ul li {
+  margin-bottom: 12px;
+
+  line-height: 1.8;
+
+  color: #555;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .modern-ba-title {
+    font-size: 2.2rem;
+  }
+
+  .modern-ba-content {
+    padding: 25px;
+  }
+
+  .modern-ba-tab-link {
+    min-height: auto;
+    font-size: 15px;
+    padding: 16px 18px !important;
+  }
+
+}
+
+/* =====================================================
+MODERN WHY CHOOSE US
+===================================================== */
+
+.why-us.section {
+  position: relative;
+
+  padding: 120px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061a28,
+      #0d2f45
+    );
+
+  overflow: hidden;
+}
+
+/* LEFT BOX */
+
+.modern-why-box {
+
+  padding: 50px 40px;
+
+  border-radius: 35px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.03)
+    );
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: white;
+}
+
+.why-modern-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  background: rgba(255,255,255,0.08);
+
+  font-weight: 700;
+
+  color: #7ed7ff;
+}
+
+.modern-why-title {
+  font-size: 2.7rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  color: white;
+}
+
+.modern-why-title span {
+  color: #7ed7ff;
+}
+
+.modern-why-description {
+  margin-top: 25px;
+
+  line-height: 1.9;
+
+  color: rgba(255,255,255,0.8);
+
+  font-size: 1.05rem;
+}
+
+/* ICON CARDS */
+
+.modern-icon-box {
+  height: 100%;
+  min-height: 280px;
+
+  padding: 40px 30px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.03)
+    );
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: all 0.4s ease;
+
+  text-align: center;
+
+  color: white;
+}
+
+.modern-icon-box:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(126,215,255,0.3);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.2);
+}
+
+/* ICONS */
+
+.modern-icon-box i {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto auto 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  color: white;
+
+  font-size: 34px;
+
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.3);
+}
+
+.modern-icon-box h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+.modern-icon-box p {
+  color: rgba(255,255,255,0.78);
+
+  line-height: 1.9;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .modern-why-title {
+    font-size: 2.2rem;
+  }
+
+  .modern-why-box,
+  .modern-icon-box {
+    padding: 30px 24px;
+  }
+
+}
+
+/* =====================================================
+MODERN TOOLS SECTION
+===================================================== */
+
+.features.section {
+  position: relative;
+
+  padding: 120px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f8fbff
+    );
+}
+
+/* HEADING */
+
+.modern-tools-heading {
+  margin-bottom: 70px;
+}
+
+.tools-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  background: rgba(20,118,185,0.1);
+
+  color: #1476b9;
+
+  font-weight: 700;
+}
+
+.modern-tools-title {
+  font-size: 3rem;
+  font-weight: 800;
+
+  color: #061a28;
+
+  line-height: 1.2;
+}
+
+.modern-tools-title span {
+  color: #1476b9;
+}
+
+.modern-tools-subtitle {
+  max-width: 800px;
+
+  margin: auto;
+
+  line-height: 1.9;
+
+  color: #666;
+
+  font-size: 1.08rem;
+}
+
+/* TOOL CARDS */
+
+.modern-tool-card {
+  height: 100%;
+
+  padding: 40px 30px;
+
+  border-radius: 30px;
+
+  background: white;
+
+  text-align: center;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.06);
+
+  transition: all 0.4s ease;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.modern-tool-card::before {
+  content: '';
+
+  position: absolute;
+
+  top: -50px;
+  right: -50px;
+
+  width: 120px;
+  height: 120px;
+
+  background:
+    radial-gradient(
+      rgba(88,193,255,0.18),
+      transparent 70%
+    );
+}
+
+.modern-tool-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 25px 60px rgba(20,118,185,0.12);
+}
+
+/* ICON */
+
+.modern-tool-icon {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto auto 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  color: white;
+
+  font-size: 34px;
+
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.25);
+}
+
+/* TEXT */
+
+.modern-tool-card h3 {
+  margin: 0;
+}
+
+.modern-tool-card h3 a {
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: #061a28;
+
+  transition: all 0.3s ease;
+}
+
+.modern-tool-card h3 a:hover {
+  color: #1476b9;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .modern-tools-title {
+    font-size: 2.2rem;
+  }
+
+  .modern-tool-card {
+    padding: 30px 20px;
+  }
+
+}
+
+/* =====================================================
+MODERN HOME COURSES SECTION
+===================================================== */
+
+.courses.section {
+  position: relative;
+
+  padding: 120px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbff,
+      #ffffff
+    );
+}
+
+/* HEADING */
+
+.modern-home-courses-heading {
+  margin-bottom: 70px;
+}
+
+.home-course-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  background: rgba(20,118,185,0.1);
+
+  color: #1476b9;
+
+  font-weight: 700;
+}
+
+.modern-home-courses-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  color: #061a28;
+}
+
+.modern-home-courses-title span {
+  color: #1476b9;
+}
+
+.modern-home-courses-subtitle {
+  max-width: 850px;
+
+  margin: auto;
+
+  line-height: 1.9;
+
+  color: #666;
+
+  font-size: 1.08rem;
+}
+
+/* COURSE CARD */
+
+.modern-home-course-card {
+  height: 100%;
+
+  border-radius: 35px;
+
+  overflow: hidden;
+
+  background: white;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.06);
+
+  transition: all 0.4s ease;
+}
+
+.modern-home-course-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 30px 70px rgba(20,118,185,0.12);
+}
+
+/* IMAGE */
+
+.modern-home-course-image {
+  height: 260px;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+/* CONTENT */
+
+.modern-home-course-card .course-content {
+  padding: 32px;
+}
+
+.modern-home-course-category {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  color: white;
+
+  font-weight: 700;
+}
+
+.modern-home-course-card .price {
+  font-size: 1.4rem;
+  font-weight: 800;
+
+  color: #061a28;
+}
+
+.modern-home-course-card h3 {
+  margin-top: 22px;
+}
+
+.modern-home-course-card h3 a {
+  font-size: 2rem;
+  font-weight: 800;
+
+  color: #061a28;
+
+  line-height: 1.3;
+
+  transition: all 0.3s ease;
+}
+
+.modern-home-course-card h3 a:hover {
+  color: #1476b9;
+}
+
+.modern-home-course-card .description {
+  margin-top: 20px;
+
+  line-height: 1.9;
+
+  color: #666;
+}
+
+/* BUTTON */
+
+.modern-home-course-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 25px;
+
+  padding: 12px 22px;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  color: white;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.modern-home-course-btn:hover {
+  transform: translateY(-3px);
+
+  color: white;
+
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.25);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .modern-home-courses-title {
+    font-size: 2.2rem;
+  }
+
+  .modern-home-course-card h3 a {
+    font-size: 1.5rem;
+  }
+
+}

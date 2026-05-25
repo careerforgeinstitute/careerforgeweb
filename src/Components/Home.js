@@ -538,49 +538,66 @@ AI POWERED BUSINESS ANALYSIS
 
     <section id="tabs" className="tabs section">
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <h3><strong>About Business Analyst</strong></h3>
+        <div className="modern-ba-heading text-center">
+
+  <span className="modern-section-badge">
+    CAREER PATH INSIGHTS
+  </span>
+
+  <h2 className="modern-ba-title mt-4">
+    Discover the World of
+    <span> Business Analysis</span>
+  </h2>
+
+  <p className="modern-ba-subtitle mt-4">
+    Understand how Business Analysts work inside modern IT companies,
+    collaborate with Agile teams and use AI-powered workflows
+    to solve real business problems.
+  </p>
+
+</div>
         <br/>
         <br/>
         <div className="row">
-          <div className="col-lg-3">
-            <ul className="nav nav-tabs flex-column">
+          <div className="col-lg-4">
+            <ul className="nav modern-ba-tabs flex-column">
               <li className="nav-item">
-                <a className="nav-link active show" data-bs-toggle="tab" href="#tab-1">Who is a business analyst?</a>
+                <a className="modern-ba-tab-link active show" data-bs-toggle="tab" href="#tab-1">Who is a business analyst?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" data-bs-toggle="tab" href="#tab-2">Why become a business analyst?</a>
+                <a className="modern-ba-tab-link" data-bs-toggle="tab" href="#tab-2">Why become a business analyst?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" data-bs-toggle="tab" href="#tab-3">What are the prerequisites?</a>
+                <a className="modern-ba-tab-link" data-bs-toggle="tab" href="#tab-3">What are the prerequisites?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" data-bs-toggle="tab" href="#tab-4">What are the main responsibilities of a Business Analyst?</a>
+                <a className="modern-ba-tab-link" data-bs-toggle="tab" href="#tab-4">What are the main responsibilities of a Business Analyst?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" data-bs-toggle="tab" href="#tab-5">What skills are essential for a Business Analyst?</a>
+                <a className="modern-ba-tab-link" data-bs-toggle="tab" href="#tab-5">What skills are essential for a Business Analyst?</a>
               </li>
             </ul>
           </div>
-          <div className="col-lg-9 mt-4 mt-lg-0">
-            <div className="tab-content">
+          <div className="col-lg-8 mt-4 mt-lg-0">
+            <div className="tab-content modern-ba-content">
               {/* Tab 1 starts */}
               <div className="tab-pane active show" id="tab-1">
                 <div className="row">
-                  <div className="col-lg-8 details order-2 order-lg-1">
+                  <div className="col-lg-8 details order-2 order-lg-1 modern-ba-text-card">
                     <p className="fst-italic">
                       In a software company using Agile methodology, a business analyst acts as the bridge between stakeholders and the development team. 
                       They gather and document requirements, create user stories, manage the product backlog, facilitate communication, and assist in testing 
                       and iteration planning. Their main role is to ensure the final product meets business needs and delivers value.</p>
                   </div>
                   <div className="col-lg-4 text-center order-1 order-lg-2">
-                    <img src={tab1Image} alt="" className="img-fluid"/>
+                    <img src={tab1Image} alt="" className="img-fluid modern-ba-image"/>
                   </div>
                 </div>
               </div>
               {/* Tab 2 starts */}
               <div className="tab-pane" id="tab-2">
                 <div className="row">
-                  <div className="col-lg-8 details order-2 order-lg-1">
+                  <div className="col-lg-8 details order-2 order-lg-1 modern-ba-text-card">
                     <p className="fst-italic">
                       According to the U.S. Bureau of Labor Statistics (BLS), the employment of management analysts, including business analysts, is projected to grow by 
                       14 percent from 2018 to 2028, which is faster than the average for other professions. Business analysts play a crucial role by using data to identify 
@@ -589,27 +606,27 @@ AI POWERED BUSINESS ANALYSIS
                       experience and goals.</p>
                   </div>
                   <div className="col-lg-4 text-center order-1 order-lg-2">
-                    <img src={tab2Image} alt="" className="img-fluid"/>
+                    <img src={tab2Image} alt="" className="img-fluid modern-ba-image"/>
                   </div>
                 </div>
               </div>
               {/* Tab 3 starts */}
               <div className="tab-pane" id="tab-3">
                   <div className="row">
-                    <div className="col-lg-8 details order-2 order-lg-1">
+                    <div className="col-lg-8 details order-2 order-lg-1 modern-ba-text-card">
                       <p className="fst-italic">
                         There are no specific prerequisites for this course. However, having a basic understanding of business operations and 
                         familiarity with data analysis tools can be advantageous.</p>
                     </div>
                     <div className="col-lg-4 text-center order-1 order-lg-2">
-                      <img src={tab3Image} alt="" className="img-fluid"/>
+                      <img src={tab3Image} alt="" className="img-fluid modern-ba-image"/>
                     </div>
                   </div>
               </div>
               {/* Tab 4 starts */}
               <div className="tab-pane" id="tab-4">
                   <div className="row">
-                    <div className="col-lg-8 details order-2 order-lg-1">
+                    <div className="col-lg-8 details order-2 order-lg-1 modern-ba-text-card">
                       <p className="fst-italic">Following are the main responsibilities:
                         <ul>
                           <li> Gathering and documenting requirements from stakeholders.</li>
@@ -621,14 +638,14 @@ AI POWERED BUSINESS ANALYSIS
                       </p>
                     </div>
                     <div className="col-lg-4 text-center order-1 order-lg-2">
-                      <img src={tab4Image} alt="" className="img-fluid"/>
+                      <img src={tab4Image} alt="" className="img-fluid modern-ba-image"/>
                     </div>
                   </div>
               </div>
               {/* Tab 5 starts */}
               <div className="tab-pane" id="tab-5">
                   <div className="row">
-                    <div className="col-lg-8 details order-2 order-lg-1">
+                    <div className="col-lg-8 details order-2 order-lg-1 modern-ba-text-card">
                       <p className="fst-italic">Following are the essential skills:
                         <ul>
                           <li> Strong communication and interpersonal skills.</li>
@@ -640,7 +657,7 @@ AI POWERED BUSINESS ANALYSIS
                      </p>
                     </div>
                     <div className="col-lg-4 text-center order-1 order-lg-2">
-                      <img src={tab5Image} alt="" className="img-fluid"/>
+                      <img src={tab5Image} alt="" className="img-fluid modern-ba-image"/>
                     </div>
                   </div>
               </div>
@@ -657,54 +674,134 @@ AI POWERED BUSINESS ANALYSIS
 
         <div className="row gy-4">
 
-          <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div className="why-box">
-              <h3>Why Choose Us?</h3>
-              <br/>
-              <br/>
-              <p>
-                Learn the exact skills companies expect from modern Business Analysts through practical training, real-world project scenarios and hands-on mentorship.
-                Unlike traditional institutes that focus mainly on theory, CareerForge prepares you for how Business Analysts actually work inside IT companies using Agile, Jira, stakeholder communication and AI tools.
-              </p>
-              <br/>
-              <br/>
-              <br/>
-              
-              {/* <div className="text-center">
-                <a href="#" className="more-btn"><span>Learn More</span> <i className="bi bi-chevron-right"></i></a>
-              </div> */}
-            </div>
-          </div>
+          <div className="row align-items-center gy-5">
 
-          <div className="col-lg-8 d-flex align-items-stretch">
-            <div className="row gy-4" data-aos="fade-up" data-aos-delay="200">
+  {/* LEFT CONTENT */}
 
-              <div className="col-xl-4">
-                <div className="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i className="bi bi-award-fill"></i>
-                  <h4>Learn from Industry Experts</h4>
-                  <p>Gain insights from seasoned professionals with real-world experience in business analysis, ensuring you learn practical and up-to-date knowledge.</p>
-                </div>
-              </div>
+  <div className="col-lg-5">
 
-              <div className="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div className="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i className="bi bi-gem"></i>
-                  <h4>Flexible Weekend Training</h4>
-                  <p>Our online courses are conveniently scheduled over weekends, allowing you to balance your education with your professional and personal commitments.</p>
-                </div>
-              </div>
+    <div className="modern-why-box">
 
-              <div className="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div className="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i className="bi bi-clipboard-data"></i>
-                  <h4>Hands-On Practical Experience</h4>
-                  <p>Engage in real-world projects, case studies to apply what you learn and develop job-ready skills. Practical experience ensures that you can hit the ground running in your role.</p>
-                </div>
-              </div>
+      <span className="why-modern-badge">
+        <strong>WHY CAREERFORGE?</strong>
+      </span>
 
-            </div>
-          </div>
+      <h2 className="modern-why-title mt-4">
+        Learn the Way
+        <span> Real IT Teams Work</span>
+      </h2>
+
+      <p className="modern-why-description">
+
+        At CareerForge Institute, we focus on practical,
+        industry-oriented learning instead of just theory.
+
+        Learn Business Analysis, Agile workflows,
+        Jira, stakeholder communication and AI-powered
+        techniques through real-world project scenarios
+        guided by working professionals.
+
+      </p>
+
+    </div>
+
+  </div>
+
+  {/* RIGHT GRID */}
+
+  <div className="col-lg-7">
+
+    <div className="row gy-4">
+
+      {/* CARD 1 */}
+
+      <div className="col-md-6">
+
+        <div className="modern-icon-box">
+
+          <i className="bi bi-award-fill"></i>
+
+          <h4>
+            Mentorship from Industry Professionals
+          </h4>
+
+          <p>
+            Learn directly from working professionals
+            with practical IT industry experience.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* CARD 2 */}
+
+      <div className="col-md-6">
+
+        <div className="modern-icon-box">
+
+          <i className="bi bi-lightning-charge-fill"></i>
+
+          <h4>
+            AI-Powered Learning
+          </h4>
+
+          <p>
+            Learn how modern Business Analysts use
+            ChatGPT and AI tools in real projects.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* CARD 3 */}
+
+      <div className="col-md-6">
+
+        <div className="modern-icon-box">
+
+          <i className="bi bi-kanban-fill"></i>
+
+          <h4>
+            Real Agile Workflows
+          </h4>
+
+          <p>
+            Understand Scrum ceremonies,
+            Jira workflows and stakeholder collaboration.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* CARD 4 */}
+
+      <div className="col-md-6">
+
+        <div className="modern-icon-box">
+
+          <i className="bi bi-briefcase-fill"></i>
+
+          <h4>
+            Job-Ready Training
+          </h4>
+
+          <p>
+            Build practical skills through
+            real-world project scenarios and mentorship.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
         </div>
 
@@ -719,68 +816,85 @@ AI POWERED BUSINESS ANALYSIS
 
         <div className="row gy-4">
 
-          <h3><strong>Tools we cover</strong></h3>
+          <div className="modern-tools-heading text-center">
 
-          {/* <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div className="features-item">
-              <i className="bi bi-briefcase" style={{color: '#ffbb2c'}}></i>
-              <h3><Link to="/" className="stretched-link">Business Analysis</Link></h3>
-            </div>
-          </div> */}
+  <span className="tools-badge">
+    INDUSTRY TOOLS + AI WORKFLOWS
+  </span>
 
-          {/* <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div className="features-item">
-              <i className="bi bi-infinity" style={{color: '#5578ff'}}></i>
-              <h3><Link to="/" className="stretched-link">Agile</Link></h3>
-            </div>
-          </div> */}
+  <h2 className="modern-tools-title mt-4">
+    Learn the Tools Used by
+    <span> Modern Business Analysts</span>
+  </h2>
 
-          {/* <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div className="features-item">
-              <i className="bi bi-mortarboard" style={{color: '#e80368'}}></i>
-              <h3><Link to="/" className="stretched-link">Scrum</Link></h3>
-            </div>
-          </div> */}
+  <p className="modern-tools-subtitle mt-4">
+    Gain hands-on experience with Agile,
+    collaboration, documentation and AI-powered
+    tools used inside real IT companies.
+  </p>
+
+</div>
 
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div className="features-item">
-              <i className="bi bi-nut" style={{color: '#e361ff'}}></i>
+            <div className="modern-tool-card">
+              <i className="bi bi-nut modern-tool-icon"></i>
               <h3><Link to="/" className="stretched-link">Jira</Link></h3>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div className="features-item">
-              <i className="bi bi-shuffle" style={{color: '#47aeff'}}></i>
+            <div className="modern-tool-card">
+              <i className="bi bi-shuffle modern-tool-icon"></i>
               <h3><Link to="/" className="stretched-link">Confluence</Link></h3>
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div className="features-item">
-              <i className="bi bi-star" style={{color: '#ffa76e'}}></i>
-              <h3><Link to="/" className="stretched-link">Lovable</Link></h3>
-            </div>
-          </div>
-
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div className="features-item">
-              <i className="bi bi-x-diamond" style={{color: '#11dbcf'}}></i>
+            <div className="modern-tool-card">
+              <i className="bi bi-x-diamond modern-tool-icon"></i>
               <h3><Link to="/" className="stretched-link">Lucid Charts</Link></h3>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
-            <div className="features-item">
-              <i className="bi bi-camera-video" style={{color: '#4233ff'}}></i>
+            <div className="modern-tool-card">
+              <i className="bi bi-camera-video modern-tool-icon"></i>
               <h3><Link to="/" className="stretched-link">Figma</Link></h3>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
-            <div className="features-item">
-              <i className="bi bi-command" style={{color: '#b2904f'}}></i>
+            <div className="modern-tool-card">
+              <i className="bi bi-command modern-tool-icon"></i>
               <h3><Link to="/" className="stretched-link">Visio</Link></h3>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1200">
+            <div className="modern-tool-card">
+            <i className="bi bi-diagram-3-fill modern-tool-icon"></i>
+            <h3><Link to="/" className="stretched-link">Draw.io</Link></h3>
+            </div>
+          </div>
+          
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
+            <div className="modern-tool-card">
+            <i className="bi bi-robot modern-tool-icon"></i>
+            <h3><Link to="/" className="stretched-link">ChatGPT</Link></h3>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1100">
+            <div className="modern-tool-card">
+            <i className="bi bi-stars modern-tool-icon"></i>
+            <h3><Link to="/" className="stretched-link">Claude AI</Link></h3>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div className="modern-tool-card">
+              <i className="bi bi-star modern-tool-icon"></i>
+              <h3><Link to="/" className="stretched-link">Lovable</Link></h3>
             </div>
           </div>
 
@@ -794,7 +908,17 @@ AI POWERED BUSINESS ANALYSIS
 
       {/* Section Title */}
       <div className="container" data-aos="fade-up">
-        <h3><strong>Courses</strong></h3>
+        <div className="modern-home-courses-heading text-center">
+          <span className="home-course-badge">INDUSTRY-READY PROGRAMS</span>
+          <h2 className="modern-home-courses-title mt-4">Transform Your Career with
+          <span> Practical BA Training</span>
+          </h2>
+          <p className="modern-home-courses-subtitle mt-4">
+            Learn Business Analysis, Agile workflows,
+            Jira, Confluence and AI-powered techniques
+            through real-world project scenarios and mentorship.
+          </p>
+        </div>
       </div>
 
       <div className="container">
@@ -803,29 +927,29 @@ AI POWERED BUSINESS ANALYSIS
 
          {/* Course 1 — Core Business Analysis */}
          <div className="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-           <div className="course-item">
+           <div className="modern-home-course-card">
              <img src={course1Image} className="img-fluid" alt="Core Business Analysis" />
              <div className="course-content">
 
                <div className="d-flex justify-content-between align-items-center mb-3">
-                 <p className="category">Business Analysis</p>
+                 <p className="modern-home-course-category">Business Analysis</p>
                  <p className="price">₹8,000</p>
                </div>
 
                <h3><Link to="/course-details-ba">Core Business Analysis</Link></h3>
                <p className="description">
-                 Learn the real-world Business Analyst skills used in IT companies — including requirement gathering, stakeholder communication,
-                Agile documentation, process modelling and AI-assisted workflows.
-                Designed for freshers, career switchers and professionals
-                looking to become job-ready Business Analysts.
-               </p>
+                Learn practical Business Analysis,
+                requirement gathering, stakeholder communication,
+                Agile documentation and AI-powered BA workflows
+                used inside real IT companies.
+                </p>
 
-               <div className="d-flex justify-content-between align-items-center mt-3">
-                 <span className="badge bg-success">6 Weeks · 12 Sessions</span>
-                 <Link to="/course-details-ba" className="btn btn-sm btn-outline-success">
-                   View Details →
-                 </Link>
-               </div>
+               <div className="modern-course-footer">
+                <div className="modern-course-tags">
+                <span className="modern-course-tag">6 Weeks · 12 Sessions</span>
+                </div>
+                <Link to="/course-details-ba" className="modern-home-course-btn">View Details →</Link>
+              </div>
 
              </div>
            </div>
@@ -833,30 +957,31 @@ AI POWERED BUSINESS ANALYSIS
 
          {/* Course 2 — Agile & Scrum */}
          <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-           <div className="course-item">
+           <div className="modern-home-course-card">
              <img src={course2Image} className="img-fluid" alt="Agile and Scrum for BAs" />
              <div className="course-content">
 
                <div className="d-flex justify-content-between align-items-center mb-3">
-                 <p className="category">Agile & Scrum</p>
+                 <p className="modern-home-course-category">Agile & Scrum</p>
                  <p className="price">₹5,000</p>
                </div>
 
                <h3><Link to="/course-details-agile">Agile &amp; Scrum for BAs</Link></h3>
                <p className="description">
-                 Learn Agile the way real software teams work inside IT companies.
-                  Gain hands-on experience with Scrum ceremonies,
-                  Jira workflows, sprint planning, backlog management
-                  and practical Agile BA collaboration techniques.
-               </p>
+                Master Scrum ceremonies,
+                Jira workflows, sprint planning,
+                Confluence collaboration and Agile BA practices
+                through live practical sessions.
+                </p>
 
-               <div className="d-flex justify-content-between align-items-center mt-3">
-                 <span className="badge bg-primary">4 Weeks · 8 Sessions</span>
-                 <span className="badge bg-primary">1 Bonus Session</span>
-                 <Link to="/course-details-agile" className="btn btn-sm btn-outline-primary">
-                   View Details →
-                 </Link>
-               </div>
+               <div className="modern-course-footer">
+                <div className="modern-course-tags">
+                <span className="modern-course-tag">4 Weeks · 8 Sessions</span>
+                <br></br>
+                <span className="modern-course-tag">Bonus Session</span>
+                </div>
+                <Link to="/course-details-agile" className="modern-home-course-btn">View Details →</Link>
+              </div>
 
              </div>
            </div>
