@@ -238,19 +238,19 @@ MODERN COURSE HERO
                 <h5>📅 Duration</h5>
                 <p>6 Weeks</p>
               </div>
-              <div className="course-info d-flex justify-content-between align-items-center">
+              <div className="modern-sidebar-card d-flex justify-content-between align-items-center">
                 <h5>📚 Sessions</h5>
                 <p>12 Sessions (90 min each)</p>
               </div>
-              <div className="course-info d-flex justify-content-between align-items-center">
+              <div className="modern-sidebar-card d-flex justify-content-between align-items-center">
                 <h5>💻 Mode</h5>
                 <p>Online · Weekend batches</p>
               </div>
-              <div className="course-info d-flex justify-content-between align-items-center">
+              <div className="modern-sidebar-card d-flex justify-content-between align-items-center">
                 <h5>💰 Fee</h5>
                 <p><strong>₹8,000</strong> <span style={{textDecoration: 'line-through', color: '#aaa', fontSize: '13px'}}>₹10,000</span></p>
               </div>
-              <div className="course-info d-flex justify-content-between align-items-center">
+              <div className="modern-sidebar-card d-flex justify-content-between align-items-center">
                 <h5>🎓 Certificate</h5>
                 <p>Included on completion</p>
               </div>
