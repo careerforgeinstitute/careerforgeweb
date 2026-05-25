@@ -2425,7 +2425,8 @@ AI SECTION
 }
 
 .ai-main-card {
-  position: absolute;
+  z-index: 5;
+  position: relative;
   top: 100px;
   left: 70px;
   width: 340px;
@@ -2460,6 +2461,7 @@ AI SECTION
 }
 
 .floating-ai-card {
+  z-index: 2;
   position: absolute;
   display: flex;
   align-items: center;
@@ -2481,17 +2483,17 @@ AI SECTION
 
 .card-a {
   top: 20px;
-  right: 30px;
+  right: 70px;
 }
 
 .card-b {
-  bottom: 70px;
-  left: 20px;
+  bottom: -50px;
+  left: -10px;
 }
 
 .card-c {
-  bottom: 10px;
-  right: 40px;
+  bottom: -50px;
+  right: -30px;
 }
 
 @keyframes floatAI {
@@ -2520,6 +2522,7 @@ AI SECTION
 
   .ai-visual-wrapper {
     display: none;
+    overflow: visible;
   }
 
 }
@@ -3596,14 +3599,62 @@ MODERN FOOTER
 }
 
 .footer-badge {
-  background: rgba(255,255,255,0.08);
+  display: inline-flex;
 
-  padding: 10px 20px;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 22px;
 
   border-radius: 50px;
 
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.14),
+      rgba(255,255,255,0.06)
+    );
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  max-width: 100%;
+}
+
+.footer-badge span {
+  color: white;
+
   font-size: 14px;
   font-weight: 700;
+
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .footer-cta-box {
+    padding: 45px 25px;
+  }
+
+  .footer-badge {
+    width: 100%;
+
+    border-radius: 22px;
+
+    padding: 12px 16px;
+
+    gap: 6px;
+  }
+
+  .footer-badge span {
+    font-size: 12px;
+  }
+
 }
 
 .footer-cta-title {

@@ -10,9 +10,10 @@ export default function footer() {
         <div className="container">
           <div className="footer-cta-box">
             <div>
-              <span className="footer-badge">
-                🚀 FUTURE-READY BUSINESS ANALYST TRAINING
-              </span>
+              <div className="footer-badge">
+                <span>🚀 Future-Ready</span>
+                <span>Business Analyst Training</span>
+              </div>
 
               <h2 className="footer-cta-title mt-3">
                 Start Your Career Transformation Journey
