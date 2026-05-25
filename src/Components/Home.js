@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImage from '../Designer.jpeg'
+import heroImage from '../Img/content.jpeg'
 import tab1Image from '../Img/Tabs/tab-1.png'
 import tab2Image from '../Img/Tabs/tab-2.png' 
 import tab3Image from '../Img/Tabs/tab-3.png' 
