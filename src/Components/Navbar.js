@@ -32,49 +32,140 @@ export default function Navbar(props) {
 
       {/* NAVIGATION */}
 
-      <nav className={`modern-nav ${mobileMenuOpen ? 'mobile-active' : ''}`}>
+      {/* DESKTOP NAV */}
+
+<nav className="modern-nav d-none d-xl-flex">
 
   <NavLink
     to="/home"
-    className="nav-item"
-    onClick={() => setMobileMenuOpen(false)}
+    className={({ isActive }) =>
+      isActive ? "nav-item active" : "nav-item"
+    }
   >
     Home
   </NavLink>
 
   <NavLink
     to="/about"
-    className="nav-item"
-    onClick={() => setMobileMenuOpen(false)}
+    className={({ isActive }) =>
+      isActive ? "nav-item active" : "nav-item"
+    }
   >
     About
   </NavLink>
 
   <NavLink
     to="/courses"
-    className="nav-item"
-    onClick={() => setMobileMenuOpen(false)}
+    className={({ isActive }) =>
+      isActive ? "nav-item active" : "nav-item"
+    }
   >
     Courses
   </NavLink>
 
   <NavLink
     to="/payment"
-    className="nav-item"
-    onClick={() => setMobileMenuOpen(false)}
+    className={({ isActive }) =>
+      isActive ? "nav-item active" : "nav-item"
+    }
   >
     Payment
   </NavLink>
 
   <NavLink
     to="/contact"
-    className="nav-item"
-    onClick={() => setMobileMenuOpen(false)}
+    className={({ isActive }) =>
+      isActive ? "nav-item active" : "nav-item"
+    }
   >
     Contact
   </NavLink>
 
 </nav>
+
+{/* MOBILE SIDEBAR */}
+
+<div className={`mobile-sidebar ${mobileMenuOpen ? 'active' : ''}`}>
+
+  {/* CLOSE BUTTON */}
+
+  <div className="mobile-sidebar-top">
+
+    <h3>Menu</h3>
+
+    <button
+      className="mobile-close-btn"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      <i className="bi bi-x-lg"></i>
+    </button>
+
+  </div>
+
+  {/* LINKS */}
+
+  <div className="mobile-sidebar-links">
+
+    <NavLink
+      to="/home"
+      className="mobile-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      Home
+    </NavLink>
+
+    <NavLink
+      to="/about"
+      className="mobile-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      About
+    </NavLink>
+
+    <NavLink
+      to="/courses"
+      className="mobile-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      Courses
+    </NavLink>
+
+    <NavLink
+      to="/payment"
+      className="mobile-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      Payment
+    </NavLink>
+
+    <NavLink
+      to="/contact"
+      className="mobile-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      Contact
+    </NavLink>
+
+  </div>
+
+  {/* CTA */}
+
+  <button
+    className="mobile-career-btn"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+  >
+    Book Free Career Guidance
+  </button>
+
+</div>
+
+{/* OVERLAY */}
+
+<div
+  className={`mobile-overlay ${mobileMenuOpen ? 'active' : ''}`}
+  onClick={() => setMobileMenuOpen(false)}
+></div>
 
       {/* CTA BUTTON */}
 
