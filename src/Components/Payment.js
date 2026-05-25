@@ -1,250 +1,177 @@
-import React from 'react'
+import React from "react";
 
 export default function Payment() {
   return (
     <>
-  {/* HERO */}
+      {/* HERO */}
 
-  <section className="payment-hero">
+      <section className="payment-hero">
+        <div className="container text-center">
+          <span className="payment-badge">SECURE ENROLLMENT</span>
 
-    <div className="container text-center">
+          <h1 className="payment-title mt-4">
+            Complete Your
+            <span> Course Enrollment</span>
+          </h1>
 
-      <span className="payment-badge">
-        SECURE ENROLLMENT
-      </span>
+          <p className="payment-description mt-4">
+            Start your journey toward becoming a modern Business Analyst with
+            practical industry training, Agile workflows and AI-powered
+            learning.
+          </p>
+        </div>
+      </section>
 
-      <h1 className="payment-title mt-4">
-        Complete Your
-        <span> Course Enrollment</span>
-      </h1>
+      {/* PAYMENT METHODS */}
 
-      <p className="payment-description mt-4">
-        Start your journey toward becoming a modern
-        Business Analyst with practical industry training,
-        Agile workflows and AI-powered learning.
-      </p>
+      <section className="payment-methods section">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="payment-section-title">Available Payment Methods</h2>
+          </div>
 
-    </div>
+          <div className="row gy-4">
+            {/* CARD 1 */}
 
-  </section>
+            <div className="col-lg-3 col-md-6">
+              <div className="payment-card">
+                <div className="payment-icon">
+                  <i className="bi bi-phone-fill"></i>
+                </div>
 
-  {/* PAYMENT METHODS */}
+                <h3>UPI Payments</h3>
 
-  <section className="payment-methods section">
-
-    <div className="container">
-
-      <div className="text-center mb-5">
-
-        <h2 className="payment-section-title">
-          Available Payment Methods
-        </h2>
-
-      </div>
-
-      <div className="row gy-4">
-
-        {/* CARD 1 */}
-
-        <div className="col-lg-3 col-md-6">
-
-          <div className="payment-card">
-
-            <div className="payment-icon">
-              <i className="bi bi-phone-fill"></i>
+                <p>
+                  Pay securely using Google Pay, PhonePe, Paytm or any UPI app.
+                </p>
+              </div>
             </div>
 
-            <h3>UPI Payments</h3>
+            {/* CARD 2 */}
 
-            <p>
-              Pay securely using Google Pay,
-              PhonePe, Paytm or any UPI app.
-            </p>
+            <div className="col-lg-3 col-md-6">
+              <div className="payment-card">
+                <div className="payment-icon">
+                  <i className="bi bi-bank2"></i>
+                </div>
 
-          </div>
+                <h3>Bank Transfer</h3>
 
-        </div>
-
-        {/* CARD 2 */}
-
-        <div className="col-lg-3 col-md-6">
-
-          <div className="payment-card">
-
-            <div className="payment-icon">
-              <i className="bi bi-bank2"></i>
+                <p>
+                  Transfer course fees through NEFT, IMPS or online banking.
+                </p>
+              </div>
             </div>
 
-            <h3>Bank Transfer</h3>
+            {/* CARD 3 */}
 
-            <p>
-              Transfer course fees through
-              NEFT, IMPS or online banking.
-            </p>
+            <div className="col-lg-3 col-md-6">
+              <div className="payment-card">
+                <div className="payment-icon">
+                  <i className="bi bi-credit-card-fill"></i>
+                </div>
 
-          </div>
+                <h3>Cheque Deposit</h3>
 
-        </div>
-
-        {/* CARD 3 */}
-
-        <div className="col-lg-3 col-md-6">
-
-          <div className="payment-card">
-
-            <div className="payment-icon">
-              <i className="bi bi-credit-card-fill"></i>
+                <p>Submit payments through branch or ATM cheque deposit.</p>
+              </div>
             </div>
 
-            <h3>Cheque Deposit</h3>
+            {/* CARD 4 */}
 
-            <p>
-              Submit payments through
-              branch or ATM cheque deposit.
-            </p>
+            <div className="col-lg-3 col-md-6">
+              <div className="payment-card">
+                <div className="payment-icon">
+                  <i className="bi bi-shield-lock-fill"></i>
+                </div>
 
+                <h3>Secure Process</h3>
+
+                <p>
+                  All enrollment payments are handled through secure channels.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ENROLLMENT PROCESS */}
+
+      <section className="enrollment-section section">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="payment-section-title">Enrollment Process</h2>
           </div>
 
-        </div>
+          <div className="row gy-4">
+            <div className="col-lg-3">
+              <div className="enrollment-step">
+                <div className="step-number">1</div>
 
-        {/* CARD 4 */}
+                <h4>Choose Course</h4>
 
-        <div className="col-lg-3 col-md-6">
-
-          <div className="payment-card">
-
-            <div className="payment-icon">
-              <i className="bi bi-shield-lock-fill"></i>
+                <p>Select the course that fits your career goals.</p>
+              </div>
             </div>
 
-            <h3>Secure Process</h3>
+            <div className="col-lg-3">
+              <div className="enrollment-step">
+                <div className="step-number">2</div>
+
+                <h4>Book Guidance Call</h4>
+
+                <p>Talk with our team and understand the roadmap.</p>
+              </div>
+            </div>
+
+            <div className="col-lg-3">
+              <div className="enrollment-step">
+                <div className="step-number">3</div>
+
+                <h4>Complete Payment</h4>
+
+                <p>Secure your enrollment using available payment methods.</p>
+              </div>
+            </div>
+
+            <div className="col-lg-3">
+              <div className="enrollment-step">
+                <div className="step-number">4</div>
+
+                <h4>Start Learning</h4>
+
+                <p>Begin your journey toward becoming job-ready.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SUPPORT SECTION */}
+
+      <section className="payment-support section">
+        <div className="container">
+          <div className="support-box text-center">
+            <h2>Need Help With Enrollment?</h2>
 
             <p>
-              All enrollment payments are
-              handled through secure channels.
+              Our team is here to guide you through course selection and
+              enrollment.
             </p>
 
+            <a
+              href="https://wa.me/919175914828"
+              target="_blank"
+              rel="noreferrer"
+              className="support-btn"
+            >
+              <i className="bi bi-whatsapp"></i>
+              Contact on WhatsApp
+            </a>
           </div>
-
         </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  {/* ENROLLMENT PROCESS */}
-
-  <section className="enrollment-section section">
-
-    <div className="container">
-
-      <div className="text-center mb-5">
-
-        <h2 className="payment-section-title">
-          Enrollment Process
-        </h2>
-
-      </div>
-
-      <div className="row gy-4">
-
-        <div className="col-lg-3">
-
-          <div className="enrollment-step">
-
-            <div className="step-number">1</div>
-
-            <h4>Choose Course</h4>
-
-            <p>Select the course that fits your career goals.</p>
-
-          </div>
-
-        </div>
-
-        <div className="col-lg-3">
-
-          <div className="enrollment-step">
-
-            <div className="step-number">2</div>
-
-            <h4>Book Guidance Call</h4>
-
-            <p>Talk with our team and understand the roadmap.</p>
-
-          </div>
-
-        </div>
-
-        <div className="col-lg-3">
-
-          <div className="enrollment-step">
-
-            <div className="step-number">3</div>
-
-            <h4>Complete Payment</h4>
-
-            <p>Secure your enrollment using available payment methods.</p>
-
-          </div>
-
-        </div>
-
-        <div className="col-lg-3">
-
-          <div className="enrollment-step">
-
-            <div className="step-number">4</div>
-
-            <h4>Start Learning</h4>
-
-            <p>Begin your journey toward becoming job-ready.</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  {/* SUPPORT SECTION */}
-
-  <section className="payment-support section">
-
-    <div className="container">
-
-      <div className="support-box text-center">
-
-        <h2>
-          Need Help With Enrollment?
-        </h2>
-
-        <p>
-          Our team is here to guide you through
-          course selection and enrollment.
-        </p>
-
-        <a
-          href="https://wa.me/919175914828"
-          target="_blank"
-          rel="noreferrer"
-          className="support-btn"
-        >
-          <i className="bi bi-whatsapp"></i>
-          Contact on WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-</>
-  )
+      </section>
+    </>
+  );
 }
