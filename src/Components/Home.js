@@ -277,7 +277,7 @@ WHAT MAKES US DIFFERENT
         Most institutes teach concepts.
         At CareerForge, you learn how Business Analysts
         actually work inside real IT projects using Agile,
-        takeholder collaboration, Jira workflows and AI tools.
+        stakeholder collaboration, Jira workflows and AI tools.
       </p>
 
     </div>
