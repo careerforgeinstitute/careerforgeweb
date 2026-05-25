@@ -2,53 +2,131 @@ import React from 'react'
 /* import contentImage from '../Img/content.jpeg' */
 import coursedetailsImage from '../Img/course-details.jpg'
 import CareerForgeCertificates from './CareerForgeCertificates';
-import { Link } from 'react-router-dom'
 /* import Form from './Form' */
 
 export default function CourseDetailsBA() {
   return (
     <>
       {/* Page Title */}
-      <div className="page-title" data-aos="fade">
-        <nav className="breadcrumbs">
-          <div className="container">
-            <ol>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/courses">Courses</Link></li>
-              <li className="current">Core Business Analysis</li>
-            </ol>
+      {/* =======================================================
+MODERN COURSE HERO
+======================================================= */}
+
+<section className="modern-course-hero">
+
+  <div className="course-hero-overlay"></div>
+
+  <div className="container position-relative z-3">
+
+    <div className="row align-items-center gy-5">
+
+      {/* LEFT */}
+
+      <div className="col-lg-7">
+
+        <span className="course-hero-badge">
+          INDUSTRY-READY BUSINESS ANALYST PROGRAM
+        </span>
+
+        <h1 className="course-hero-title mt-4">
+          Become a
+          <span> Job-Ready Business Analyst</span>
+        </h1>
+
+        <p className="course-hero-description mt-4">
+          Learn practical Business Analysis,
+          Agile workflows, stakeholder management,
+          documentation, process modelling and AI-powered BA skills
+          through real-world project scenarios.
+        </p>
+
+        <div className="course-hero-features mt-5">
+
+          <div className="hero-feature-pill">
+            ✅ 6 Weeks Training
           </div>
-        </nav>
-        <div className="heading">
-          <div className="container">
-            <div className="row d-flex justify-content-center text-center">
-              <div className="col-lg-8">
-                <h1>Core Business Analysis</h1>
-                <p className="mb-0">6 Weeks · 12 Sessions · ₹8,000</p>
-              </div>
-            </div>
+
+          <div className="hero-feature-pill">
+            ✅ Real Project Scenarios
           </div>
+
+          <div className="hero-feature-pill">
+            ✅ Jira + Agile + AI Tools
+          </div>
+
+          <div className="hero-feature-pill">
+            ✅ Resume & Interview Prep
+          </div>
+
         </div>
+
+        <div className="hero-course-buttons mt-5">
+
+          <a
+            href="https://wa.me/919175914828"
+            target="_blank"
+            rel="noreferrer"
+            className="hero-enroll-btn"
+          >
+            Book Free Career Guidance
+          </a>
+
+        </div>
+
       </div>
 
+      {/* RIGHT */}
+
+      <div className="col-lg-5">
+
+        <div className="hero-course-image-wrapper">
+
+          <img
+            src={coursedetailsImage}
+            alt="Course"
+            className="img-fluid modern-course-hero-image"
+          />
+
+          <div className="floating-price-card">
+
+            <span>Course Fee</span>
+
+            <h3 className="modern-subtitle">₹8,000</h3>
+
+            <p>Industry-ready practical training</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
       {/* Course Details Section */}
-      <section id="courses-course-details" className="courses-course-details section">
+      <section className="modern-course-details courses-course-details section">
         <div className="container" data-aos="fade-up">
           <div className="row">
 
             {/* LEFT — Main Content */}
             <div className="col-lg-8">
-              <img src={coursedetailsImage} className="img-fluid" alt="Core Business Analysis" />
+              <img src={coursedetailsImage} className="img-fluid modern-details-image" alt="Core Business Analysis" />
               <br /><br />
 
-              <h2>Core Business Analysis</h2>
+              <h2 className="modern-section-title">
+  Core Business Analysis
+</h2>
               <p>
                 This 6-week program is designed for anyone looking to transition into a Business Analyst
                 role — whether you're a fresh graduate, a sales professional, or a domain expert from any
                 field. You'll gain practical, industry-ready skills with hands-on tools and real project work.
               </p>
 
-              <h3>Key Course Features</h3>
+              <h3 className="modern-subtitle">Key Course Features</h3>
               <ul>
                 <li><strong>Instructor-Led Online Training:</strong> Convenient weekend live sessions with direct access to your trainer.</li>
                 <li><strong>Comprehensive Study Materials:</strong> Digital templates, BRD, FRS and use case documents included.</li>
@@ -76,9 +154,9 @@ export default function CourseDetailsBA() {
                 <li>Capstone project, resume, LinkedIn and mock interview</li>
               </ul>
 
-              <h3>Course Curriculum</h3>
+              <h3 className="modern-subtitle">Course Curriculum</h3>
 
-              <h5 style={{color: '#198754', marginTop: '16px'}}>Phase 0 · Orientation</h5>
+              <h5 className="modern-phase-title">Phase 0 · Orientation</h5>
               <ul>
                 <li><strong>Session 1:</strong> What does a BA actually do? — Roles, salaries, BA vs PM vs PO, course roadmap</li>
               </ul>
@@ -120,24 +198,43 @@ export default function CourseDetailsBA() {
                 <li><strong>Session 14:</strong> Mock interviews &amp; capstone project — Top 30 BA questions, STAR method, certificate</li>
               </ul>
 
-            {/* Enrol CTA */}
-              <div className="container mt-4 p-3" style={{background: '#eff6ff', borderLeft: '4px solid #0d6efd', borderRadius: '6px'}}>
-                <p className="mb-0" style={{fontSize: '15px', color: '#1a1a1a'}}>
-                  <strong>To enrol, contact or WhatsApp on{' '}</strong>
-                  <a href="https://wa.me/919175914828" target="_blank" rel="noreferrer" style={{color: '#0d6efd', fontWeight: '600'}}>
-                    +91 91759 14828
-                  </a>
-                  <strong> or you can email us on </strong>
-                  <a href="mailto:info@careerforgeinstitute.in" style={{color: '#0d6efd',fontWeight: '600'}}>info@careerforgeinstitute.in</a>
-                </p>
-              </div>
+            {/* MODERN ENROLL CTA */}
+
+<div className="modern-enroll-cta mt-5">
+
+  <h3>
+    Ready to Start Your BA Journey?
+  </h3>
+
+  <p>
+    Contact us for enrollment guidance,
+    career roadmap discussion and batch details.
+  </p>
+
+  <div className="enroll-contact-links">
+
+    <a
+      href="https://wa.me/919175914828"
+      target="_blank"
+      rel="noreferrer"
+    >
+      📱 WhatsApp Us
+    </a>
+
+    <a href="mailto:info@careerforgeinstitute.in">
+      ✉️ Email Us
+    </a>
+
+  </div>
+
+</div>
               
             </div>
 
             {/* RIGHT — Sidebar */}
             <div className="col-lg-4">
 
-              <div className="course-info d-flex justify-content-between align-items-center">
+              <div className="modern-sidebar-card d-flex justify-content-between align-items-center">
                 <h5>📅 Duration</h5>
                 <p>6 Weeks</p>
               </div>

@@ -4189,3 +4189,287 @@ MOBILE NAVBAR FIX
   }
 
 }
+
+/* =====================================================
+MODERN COURSE DETAILS PAGE
+===================================================== */
+
+.modern-course-hero {
+  position: relative;
+  padding: 140px 0 120px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061a28,
+      #0f2f45,
+      #1476b9
+    );
+}
+
+.course-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255,255,255,0.08),
+      transparent 30%
+    );
+}
+
+.course-hero-badge {
+  background: rgba(255,255,255,0.1);
+
+  color: white;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  backdrop-filter: blur(10px);
+}
+
+.course-hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: white;
+}
+
+.course-hero-title span {
+  color: #7ed7ff;
+}
+
+.course-hero-description {
+  line-height: 1.9;
+  color: rgba(255,255,255,0.82);
+  font-size: 1.08rem;
+}
+
+.course-hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-feature-pill {
+  background: rgba(255,255,255,0.1);
+
+  padding: 12px 18px;
+
+  border-radius: 50px;
+
+  color: white;
+
+  font-weight: 700;
+}
+
+.hero-enroll-btn {
+  display: inline-flex;
+
+  padding: 16px 30px;
+
+  border-radius: 50px;
+
+  background: white;
+
+  color: #1476b9;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.hero-enroll-btn:hover {
+  transform: translateY(-3px);
+  color: #1476b9;
+}
+
+.hero-course-image-wrapper {
+  position: relative;
+}
+
+.modern-course-hero-image {
+  border-radius: 30px;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.2);
+}
+
+.floating-price-card {
+  position: absolute;
+
+  bottom: -25px;
+  left: 30px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 25px 30px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.15);
+}
+
+.floating-price-card span {
+  color: #666;
+}
+
+.floating-price-card h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1476b9;
+}
+
+.modern-course-details {
+  background: #f8fbff;
+}
+
+.modern-details-image {
+  border-radius: 30px;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.08);
+}
+
+.modern-section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #061a28;
+  margin-top: 40px;
+}
+
+.modern-subtitle {
+  margin-top: 45px;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #061a28;
+}
+
+.modern-phase-title {
+  margin-top: 35px;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: #1476b9;
+}
+
+.modern-course-details ul li {
+  margin-bottom: 14px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* SIDEBAR */
+
+.modern-sidebar-card {
+  margin-bottom: 18px;
+
+  padding: 20px 24px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.06);
+
+  transition: all 0.3s ease;
+}
+
+.modern-sidebar-card:hover {
+  transform: translateY(-4px);
+}
+
+.modern-sidebar-card h5 {
+  font-weight: 700;
+}
+
+.modern-sidebar-card p {
+  margin: 0;
+  color: #555;
+}
+
+/* ENROLL CTA */
+
+.modern-enroll-cta {
+  padding: 40px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061a28,
+      #1476b9
+    );
+
+  color: white;
+}
+
+.modern-enroll-cta h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.modern-enroll-cta p {
+  color: rgba(255,255,255,0.82);
+  line-height: 1.9;
+}
+
+.enroll-contact-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.enroll-contact-links a {
+  display: inline-flex;
+
+  padding: 14px 24px;
+
+  border-radius: 50px;
+
+  background: white;
+
+  color: #1476b9;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.enroll-contact-links a:hover {
+  transform: translateY(-3px);
+  color: #1476b9;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .course-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .modern-section-title {
+    font-size: 2rem;
+  }
+
+  .modern-subtitle {
+    font-size: 1.5rem;
+  }
+
+}
