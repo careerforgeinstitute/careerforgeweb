@@ -77,17 +77,17 @@ export default function Home() {
             {/* RIGHT SIDE FLOATING CARDS */}
             <div className="col-lg-5 d-none d-lg-block">
               <div className="hero-card-wrapper" data-aos="zoom-in">
-                <div className="hero-floating-card card-one">
+                <div className="hero-small-card hero-card-top">
                   <i className="bi bi-kanban-fill"></i>
                   <span>Agile & Scrum</span>
                 </div>
 
-                <div className="hero-floating-card card-two">
+                <div className="hero-small-card hero-card-left">
                   <i className="bi bi-robot"></i>
                   <span>AI for BAs</span>
                 </div>
 
-                <div className="hero-floating-card card-three">
+                <div className="hero-small-card hero-card-right">
                   <i className="bi bi-bar-chart-fill"></i>
                   <span>Real Projects</span>
                 </div>
