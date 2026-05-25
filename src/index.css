@@ -3580,6 +3580,30 @@ MODERN FOOTER
 
 .footer-main {
   padding: 100px 0 60px;
+  overflow: hidden;
+}
+
+/* MOBILE FOOTER SPACING */
+
+@media (max-width: 768px) {
+
+  .footer-main {
+    padding:
+      70px 22px 50px !important;
+  }
+
+  .footer-cta-section .container,
+  .footer-main .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .footer-brand,
+  .footer-links-modern,
+  .footer-contact-modern {
+    width: 100%;
+  }
+
 }
 
 .footer-brand h2 {
