@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { NavLink, Link } from 'react-router-dom'
 import myLogo from '../logo.png'
 
 export default function Navbar(props) {
+
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
 
   return (
@@ -30,29 +32,49 @@ export default function Navbar(props) {
 
       {/* NAVIGATION */}
 
-      <nav className="modern-nav">
+      <nav className={`modern-nav ${mobileMenuOpen ? 'mobile-active' : ''}`}>
 
-        <NavLink to="/home" className="nav-item">
-          Home
-        </NavLink>
+  <NavLink
+    to="/home"
+    className="nav-item"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Home
+  </NavLink>
 
-        <NavLink to="/about" className="nav-item">
-          About
-        </NavLink>
+  <NavLink
+    to="/about"
+    className="nav-item"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    About
+  </NavLink>
 
-        <NavLink to="/courses" className="nav-item">
-          Courses
-        </NavLink>
+  <NavLink
+    to="/courses"
+    className="nav-item"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Courses
+  </NavLink>
 
-        <NavLink to="/payment" className="nav-item">
-          Payment
-        </NavLink>
+  <NavLink
+    to="/payment"
+    className="nav-item"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Payment
+  </NavLink>
 
-        <NavLink to="/contact" className="nav-item">
-          Contact
-        </NavLink>
+  <NavLink
+    to="/contact"
+    className="nav-item"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Contact
+  </NavLink>
 
-      </nav>
+</nav>
 
       {/* CTA BUTTON */}
 
@@ -68,9 +90,14 @@ export default function Navbar(props) {
 
       {/* MOBILE ICON */}
 
-      <div className="mobile-menu-icon d-xl-none">
-        <i className="bi bi-list"></i>
-      </div>
+      <div
+  className="mobile-menu-icon d-xl-none"
+  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+>
+
+  <i className={`bi ${mobileMenuOpen ? 'bi-x-lg' : 'bi-list'}`}></i>
+
+</div>
 
     </div>
 
