@@ -9,14 +9,12 @@ import course1Image from "../Img/course-1.jpg";
 import course2Image from "../Img/course-2.jpg";
 import { Link } from "react-router-dom";
 
-
-
 export default function Home() {
   const [webinarForm, setWebinarForm] = useState({
     name: "",
     email: "",
     mobile: "",
-    profession: ""
+    profession: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -32,8 +30,8 @@ export default function Home() {
         "https://script.google.com/macros/s/AKfycby0b_SxUh-rZJwy0Fb3oSjo1OoPSXMM7wIouPYwKNO0vchVUBd0BfeuVQ5jEs0W9Q1d/exec",
         {
           method: "POST",
-          body: JSON.stringify(webinarForm)
-        }
+          body: JSON.stringify(webinarForm),
+        },
       );
 
       setSuccess(true);
@@ -42,31 +40,23 @@ export default function Home() {
         name: "",
         email: "",
         mobile: "",
-        profession: ""
+        profession: "",
       });
       /* AUTO CLOSE AFTER 3 SECONDS */
 
       setTimeout(() => {
+        const modalElement = document.getElementById("webinarModal");
 
-      const modalElement =
-      document.getElementById("webinarModal");
+        const modal = window.bootstrap.Modal.getInstance(modalElement);
 
-      const modal =
-        window.bootstrap.Modal.getInstance(
-          modalElement
-      );
+        modal.hide();
 
-      modal.hide();
+        /* WAIT FOR CLOSE ANIMATION */
 
-  /* WAIT FOR CLOSE ANIMATION */
-
-    setTimeout(() => {
-
-    setSuccess(false);
-
-    }, 500);
-
-    }, 5000);
+        setTimeout(() => {
+          setSuccess(false);
+        }, 500);
+      }, 5000);
     } catch (error) {
       console.error(error);
     }
@@ -740,248 +730,169 @@ AI POWERED BUSINESS ANALYSIS
 FREE WEBINAR SECTION
 ======================================================= */}
 
-<section className="webinar-section section">
+      <section className="webinar-section section">
+        <div className="container">
+          <div className="webinar-box">
+            <div className="row align-items-center">
+              {/* LEFT */}
 
-  <div className="container">
+              <div className="col-lg-7">
+                <span className="webinar-badge">🎯 FREE LIVE WEBINAR</span>
 
-    <div className="webinar-box">
+                <h2 className="webinar-title mt-4">
+                  Business Analysis & Agile
+                  <span> Career Webinar</span>
+                </h2>
 
-      <div className="row align-items-center">
+                <p className="webinar-description mt-4">
+                  Discover how Business Analysts work in IT companies,
+                  understand Agile workflows and learn how freshers and
+                  professionals can transition into Business Analysis.
+                </p>
 
-        {/* LEFT */}
+                {/* DETAILS */}
 
-        <div className="col-lg-7">
+                <div className="webinar-details">
+                  <div className="webinar-detail">
+                    📅 6th June 2026 (Saturday)
+                  </div>
 
-          <span className="webinar-badge">
-            🎯 FREE LIVE WEBINAR
-          </span>
+                  <div className="webinar-detail">⏰ 11:00 AM IST</div>
 
-          <h2 className="webinar-title mt-4">
+                  <div className="webinar-detail">💻 Online Live Session</div>
 
-            Business Analysis & Agile
-            <span> Career Webinar</span>
+                  <div className="webinar-detail">🎓 Beginner Friendly</div>
+                </div>
 
-          </h2>
+                {/* BUTTONS */}
 
-          <p className="webinar-description mt-4">
+                <div className="webinar-buttons mt-5">
+                  <button
+                    className="webinar-btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#webinarModal"
+                  >
+                    {" "}
+                    Reserve Free Seat{" "}
+                  </button>
 
-            Discover how Business Analysts work in IT companies,
-            understand Agile workflows and learn how freshers
-            and professionals can transition into Business Analysis.
+                  <Link to="/contact" className="webinar-btn-secondary">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
 
-          </p>
+              {/* RIGHT */}
 
-          {/* DETAILS */}
+              <div className="col-lg-5">
+                <div className="webinar-card">
+                  <div className="webinar-live">🔴 LIVE WEBINAR</div>
 
-          <div className="webinar-details">
+                  <h3 style={{ color: "#fff" }}>What You'll Learn</h3>
 
-            <div className="webinar-detail">
-              📅 6th June 2026 (Saturday)
+                  <ul>
+                    <li>✅ What Business Analysts actually do</li>
+
+                    <li>✅ Agile & Scrum explained practically</li>
+
+                    <li>✅ Real BA project examples</li>
+
+                    <li>✅ How AI helps Business Analysts</li>
+
+                    <li>✅ Career roadmap into IT</li>
+
+                    <li>✅ Resume & interview guidance</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
-            <div className="webinar-detail">
-              ⏰ 11:00 AM IST
-            </div>
-
-            <div className="webinar-detail">
-              💻 Online Live Session
-            </div>
-
-            <div className="webinar-detail">
-              🎓 Beginner Friendly
-            </div>
-
           </div>
-
-          {/* BUTTONS */}
-
-          <div className="webinar-buttons mt-5">
-
-            <button className="webinar-btn-primary" data-bs-toggle="modal" data-bs-target="#webinarModal"> Reserve Free Seat </button>
-
-            <Link
-              to="/contact"
-              className="webinar-btn-secondary"
-            >
-              Learn More
-            </Link>
-
-          </div>
-
         </div>
+      </section>
 
-        {/* RIGHT */}
+      <div className="modal fade" id="webinarModal" tabIndex="-1">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content webinar-modal">
+            <div className="modal-body p-5">
+              <h3 className="mb-4">
+                {success
+                  ? "🎉 You're Registered for the Webinar!"
+                  : "Reserve Your Free Webinar Seat"}
+              </h3>
 
-        <div className="col-lg-5">
+              {success ? (
+                <div className="webinar-success-box">
+                  🎉 Registration Successful! Congratulations on taking the
+                  first step towards your Business Analyst journey. You'll
+                  receive webinar details on your email shortly.
+                </div>
+              ) : (
+                <form onSubmit={handleWebinarSubmit}>
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Full Name"
+                    required
+                    value={webinarForm.name}
+                    onChange={(e) =>
+                      setWebinarForm({
+                        ...webinarForm,
+                        name: e.target.value,
+                      })
+                    }
+                  />
 
-          <div className="webinar-card">
+                  <input
+                    type="email"
+                    className="form-control mb-3"
+                    placeholder="Email Address"
+                    required
+                    value={webinarForm.email}
+                    onChange={(e) =>
+                      setWebinarForm({
+                        ...webinarForm,
+                        email: e.target.value,
+                      })
+                    }
+                  />
 
-            <div className="webinar-live">
-              🔴 LIVE WEBINAR
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Mobile Number"
+                    required
+                    value={webinarForm.mobile}
+                    onChange={(e) =>
+                      setWebinarForm({
+                        ...webinarForm,
+                        mobile: e.target.value,
+                      })
+                    }
+                  />
+
+                  <input
+                    type="text"
+                    className="form-control mb-4"
+                    placeholder="Current Profession"
+                    required
+                    value={webinarForm.profession}
+                    onChange={(e) =>
+                      setWebinarForm({
+                        ...webinarForm,
+                        profession: e.target.value,
+                      })
+                    }
+                  />
+
+                  <button type="submit" className="webinar-submit-btn">
+                    {loading ? "Submitting..." : "Reserve My Seat"}
+                  </button>
+                </form>
+              )}
             </div>
-
-            <h3 style={{ color: "#fff" }}>
-              What You'll Learn
-            </h3>
-
-            <ul>
-
-              <li>
-                ✅ What Business Analysts actually do
-              </li>
-
-              <li>
-                ✅ Agile & Scrum explained practically
-              </li>
-
-              <li>
-                ✅ Real BA project examples
-              </li>
-
-              <li>
-                ✅ How AI helps Business Analysts
-              </li>
-
-              <li>
-                ✅ Career roadmap into IT
-              </li>
-
-              <li>
-                ✅ Resume & interview guidance
-              </li>
-
-            </ul>
-
           </div>
-
         </div>
-
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<div
-  className="modal fade"
-  id="webinarModal"
-  tabIndex="-1"
->
-
-  <div className="modal-dialog modal-dialog-centered">
-
-    <div className="modal-content webinar-modal">
-
-      <div className="modal-body p-5">
-
-        <h3 className="mb-4">
-
-  {
-    success
-      ? "🎉 You're Registered for the Webinar!"
-      : "Reserve Your Free Webinar Seat"
-  }
-
-</h3>
-
-        {
-          success ? (
-
-            <div className="webinar-success-box">
-              🎉 Registration Successful!
-
-              Congratulations on taking the first step
-              towards your Business Analyst journey.
-
-              You'll receive webinar details on your
-              email shortly.
-            </div>
-
-          ) : (
-
-            <form onSubmit={handleWebinarSubmit}>
-
-              <input
-                type="text"
-                className="form-control mb-3"
-                placeholder="Full Name"
-                required
-                value={webinarForm.name}
-                onChange={(e) =>
-                  setWebinarForm({
-                    ...webinarForm,
-                    name: e.target.value
-                  })
-                }
-              />
-
-              <input
-                type="email"
-                className="form-control mb-3"
-                placeholder="Email Address"
-                required
-                value={webinarForm.email}
-                onChange={(e) =>
-                  setWebinarForm({
-                    ...webinarForm,
-                    email: e.target.value
-                  })
-                }
-              />
-
-              <input
-                type="text"
-                className="form-control mb-3"
-                placeholder="Mobile Number"
-                required
-                value={webinarForm.mobile}
-                onChange={(e) =>
-                  setWebinarForm({
-                    ...webinarForm,
-                    mobile: e.target.value
-                  })
-                }
-              />
-
-              <input
-                type="text"
-                className="form-control mb-4"
-                placeholder="Current Profession"
-                required
-                value={webinarForm.profession}
-                onChange={(e) =>
-                  setWebinarForm({
-                    ...webinarForm,
-                    profession: e.target.value
-                  })
-                }
-              />
-
-              <button
-                type="submit"
-                className="webinar-submit-btn"
-              >
-                {
-                  loading
-                    ? "Submitting..."
-                    : "Reserve My Seat"
-                }
-              </button>
-
-            </form>
-
-          )
-        }
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
 
       {/* About us section starts */}
       <section id="why-us" className="section why-us">
@@ -1359,176 +1270,136 @@ UPCOMING BATCH SECTION
 ======================================================= */}
 
       <section className="upcoming-batch-section section">
-
-       <div className="container">
-
+        <div className="container">
           <div className="upcoming-batch-box">
+            <div className="row align-items-center">
+              {/* LEFT */}
 
-      <div className="row align-items-center">
+              <div className="col-lg-7">
+                <span className="batch-badge">
+                  🚀 NEW BATCH ENROLLMENTS OPEN
+                </span>
 
-        {/* LEFT */}
+                <h2 className="batch-title mt-4">
+                  Upcoming Business Analyst Batch
+                  <span> Starts on 20th June</span>
+                </h2>
 
-        <div className="col-lg-7">
+                <p className="batch-description mt-4">
+                  Join our practical Business Analysis training program designed
+                  for freshers, career switchers and IT professionals. Learn
+                  Agile, Jira, stakeholder communication, AI-powered workflows
+                  and real project scenarios with mentorship from working
+                  professionals.
+                </p>
 
-          <span className="batch-badge">
-            🚀 NEW BATCH ENROLLMENTS OPEN
-          </span>
+                {/* HIGHLIGHTS */}
 
-          <h2 className="batch-title mt-4">
+                <div className="batch-highlights">
+                  <div className="batch-highlight">
+                    ✅ Live Interactive Sessions
+                  </div>
 
-            Upcoming Business Analyst Batch
-            <span> Starts on 20th June</span>
+                  <div className="batch-highlight">✅ Weekend Batches</div>
 
-          </h2>
+                  <div className="batch-highlight">
+                    ✅ Real Project Training
+                  </div>
 
-          <p className="batch-description mt-4">
+                  <div className="batch-highlight">
+                    ✅ Resume + Interview Preparation
+                  </div>
 
-            Join our practical Business Analysis training program
-            designed for freshers, career switchers and IT professionals.
+                  <div className="batch-highlight">
+                    ✅ AI for Business Analysts
+                  </div>
 
-            Learn Agile, Jira, stakeholder communication,
-            AI-powered workflows and real project scenarios
-            with mentorship from working professionals.
+                  <div className="batch-highlight">✅ Industry Mentorship</div>
+                </div>
 
-          </p>
+                {/* CTA */}
 
-          {/* HIGHLIGHTS */}
+                <div className="batch-buttons mt-5">
+                  <a
+                    href="https://wa.me/919175914828"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="batch-btn-primary"
+                  >
+                    Enroll Now
+                  </a>
 
-          <div className="batch-highlights">
+                  <Link to="/courses" className="batch-btn-secondary">
+                    View Curriculum
+                  </Link>
+                </div>
+              </div>
 
-            <div className="batch-highlight">
-              ✅ Live Interactive Sessions
+              {/* RIGHT */}
+
+              <div className="col-lg-5">
+                <div className="batch-card">
+                  <div className="batch-live">🔥 LIMITED SEATS</div>
+
+                  <h3>Batch Details</h3>
+
+                  <div className="batch-info-list">
+                    <div className="batch-info-item">
+                      <span>📅 Start Date</span>
+                      <strong>20th June 2026</strong>
+                    </div>
+
+                    <div className="batch-info-item">
+                      <span>🕒 Schedule</span>
+                      <strong>Weekend Live Sessions</strong>
+                    </div>
+
+                    <div className="batch-info-item">
+                      <span>💻 Mode</span>
+                      <strong>Online Training</strong>
+                    </div>
+
+                    <div className="batch-info-item">
+                      <span>🎯 Ideal For</span>
+                      <strong>Freshers & Working Professionals</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div className="batch-highlight">
-              ✅ Weekend Batches
-            </div>
-
-            <div className="batch-highlight">
-              ✅ Real Project Training
-            </div>
-
-            <div className="batch-highlight">
-              ✅ Resume + Interview Preparation
-            </div>
-
-            <div className="batch-highlight">
-              ✅ AI for Business Analysts
-            </div>
-
-            <div className="batch-highlight">
-              ✅ Industry Mentorship
-            </div>
-
           </div>
-
-          {/* CTA */}
-
-          <div className="batch-buttons mt-5">
-
-            <a
-              href="https://wa.me/919175914828"
-              target="_blank"
-              rel="noreferrer"
-              className="batch-btn-primary"
-            >
-              Enroll Now
-            </a>
-
-            <Link
-              to="/courses"
-              className="batch-btn-secondary"
-            >
-              View Curriculum
-            </Link>
-
-          </div>
-
         </div>
-
-        {/* RIGHT */}
-
-        <div className="col-lg-5">
-
-          <div className="batch-card">
-
-            <div className="batch-live">
-              🔥 LIMITED SEATS
-            </div>
-
-            <h3>
-              Batch Details
-            </h3>
-
-            <div className="batch-info-list">
-
-              <div className="batch-info-item">
-                <span>📅 Start Date</span>
-                <strong>20th June 2026</strong>
-              </div>
-
-              <div className="batch-info-item">
-                <span>🕒 Schedule</span>
-                <strong>Weekend Live Sessions</strong>
-              </div>
-
-              <div className="batch-info-item">
-                <span>💻 Mode</span>
-                <strong>Online Training</strong>
-              </div>
-
-              <div className="batch-info-item">
-                <span>🎯 Ideal For</span>
-                <strong>
-                  Freshers & Working Professionals
-                </strong>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-{/* =======================================================
+      </section>
+      {/* =======================================================
 MOBILE STICKY CTA
 ======================================================= */}
 
-<div className="mobile-sticky-cta d-lg-none">
+      <div className="mobile-sticky-cta d-lg-none">
+        {/* WHATSAPP */}
 
-  {/* WHATSAPP */}
+        <a
+          href="https://wa.me/919175914828"
+          target="_blank"
+          rel="noreferrer"
+          className="mobile-sticky-btn whatsapp-btn"
+        >
+          <i className="bi bi-whatsapp"></i>
 
-  <a
-    href="https://wa.me/919175914828"
-    target="_blank"
-    rel="noreferrer"
-    className="mobile-sticky-btn whatsapp-btn"
-  >
-    <i className="bi bi-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
 
-    <span>WhatsApp</span>
-  </a>
+        {/* WEBINAR */}
 
-  {/* WEBINAR */}
+        <button
+          className="mobile-sticky-btn webinar-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#webinarModal"
+        >
+          <i className="bi bi-camera-video-fill"></i>
 
-  <button
-    className="mobile-sticky-btn webinar-btn"
-    data-bs-toggle="modal"
-    data-bs-target="#webinarModal"
-  >
-    <i className="bi bi-camera-video-fill"></i>
-
-    <span>Free Webinar</span>
-  </button>
-
-</div>
+          <span>Free Webinar</span>
+        </button>
+      </div>
     </>
   );
 }
