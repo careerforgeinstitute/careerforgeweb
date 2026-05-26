@@ -5919,3 +5919,104 @@ WEBINAR MODAL
 
   font-weight: 700;
 }
+
+/* =====================================================
+MOBILE STICKY CTA
+===================================================== */
+
+.mobile-sticky-cta {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  z-index: 9999;
+
+  background: rgba(255,255,255,0.95);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 -5px 25px rgba(0,0,0,0.08);
+}
+
+/* BUTTONS */
+
+.mobile-sticky-btn {
+  flex: 1;
+
+  height: 68px;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-weight: 700;
+
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+}
+
+/* WHATSAPP */
+
+.whatsapp-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #25d366,
+      #1ebe5d
+    );
+
+  color: white;
+}
+
+/* WEBINAR */
+
+.webinar-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  color: white;
+}
+
+/* ICONS */
+
+.mobile-sticky-btn i {
+  font-size: 20px;
+}
+
+/* ACTIVE EFFECT */
+
+.mobile-sticky-btn:active {
+  transform: scale(0.98);
+}
+
+/* DESKTOP HIDE */
+
+@media (min-width: 992px) {
+
+  .mobile-sticky-cta {
+    display: none;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  body {
+    padding-bottom: 75px;
+  }
+
+}

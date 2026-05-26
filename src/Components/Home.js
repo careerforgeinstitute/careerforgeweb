@@ -1485,6 +1485,38 @@ UPCOMING BATCH SECTION
   </div>
 
 </section>
+{/* =======================================================
+MOBILE STICKY CTA
+======================================================= */}
+
+<div className="mobile-sticky-cta d-lg-none">
+
+  {/* WHATSAPP */}
+
+  <a
+    href="https://wa.me/919175914828"
+    target="_blank"
+    rel="noreferrer"
+    className="mobile-sticky-btn whatsapp-btn"
+  >
+    <i className="bi bi-whatsapp"></i>
+
+    <span>WhatsApp</span>
+  </a>
+
+  {/* WEBINAR */}
+
+  <button
+    className="mobile-sticky-btn webinar-btn"
+    data-bs-toggle="modal"
+    data-bs-target="#webinarModal"
+  >
+    <i className="bi bi-camera-video-fill"></i>
+
+    <span>Free Webinar</span>
+  </button>
+
+</div>
     </>
   );
 }
