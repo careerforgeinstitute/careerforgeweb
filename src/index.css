@@ -6020,3 +6020,28 @@ MOBILE STICKY CTA
   }
 
 }
+
+/* SUCCESS STATE */
+
+.webinar-success-box {
+  padding: 28px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37,211,102,0.12),
+      rgba(37,211,102,0.06)
+    );
+
+  border: 1px solid rgba(37,211,102,0.2);
+
+  color: #1f7a42;
+
+  line-height: 1.9;
+
+  font-weight: 600;
+
+  text-align: center;
+}

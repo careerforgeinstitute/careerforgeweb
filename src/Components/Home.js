@@ -877,14 +877,26 @@ FREE WEBINAR SECTION
       <div className="modal-body p-5">
 
         <h3 className="mb-4">
-          Reserve Your Seat for Free Webinar
-        </h3>
+
+  {
+    success
+      ? "🎉 You're Registered for the Webinar!"
+      : "Reserve Your Free Webinar Seat"
+  }
+
+</h3>
 
         {
           success ? (
 
-            <div className="alert alert-success">
-              Registration Successful! Congratulations for taking first step towards your career growth. You'll receive an email with webinar details shortly.
+            <div className="webinar-success-box">
+              🎉 Registration Successful!
+
+              Congratulations on taking the first step
+              towards your Business Analyst journey.
+
+              You'll receive webinar details on your
+              email shortly.
             </div>
 
           ) : (
