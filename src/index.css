@@ -5682,3 +5682,334 @@ MOBILE STICKY CTA
 
   text-align: center;
 }
+
+/* =====================================================
+WHO IS THIS FOR SECTION
+===================================================== */
+
+.who-section {
+  padding: 120px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f8fbff
+    );
+}
+
+/* HEADING */
+
+.who-heading {
+  max-width: 850px;
+
+  margin: auto;
+}
+
+.who-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  background: rgba(20,118,185,0.1);
+
+  color: #1476b9;
+
+  font-weight: 700;
+}
+
+.who-title {
+  font-size: 3rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  color: #061a28;
+}
+
+.who-title span {
+  color: #1476b9;
+}
+
+.who-description {
+  color: #666;
+
+  line-height: 2;
+
+  font-size: 1.08rem;
+}
+
+/* CARDS */
+
+.who-card {
+  height: 100%;
+
+  padding: 40px 30px;
+
+  border-radius: 30px;
+
+  background: white;
+
+  text-align: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.05);
+
+  transition: all 0.4s ease;
+}
+
+/* GLOW */
+
+.who-card::before {
+  content: '';
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  background:
+    radial-gradient(
+      rgba(88,193,255,0.16),
+      transparent 70%
+    );
+
+  top: -40px;
+  right: -40px;
+}
+
+.who-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 25px 60px rgba(20,118,185,0.12);
+}
+
+/* ICON */
+
+.who-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: auto auto 28px;
+
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 36px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.22);
+}
+
+/* TEXT */
+
+.who-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  color: #061a28;
+
+  margin-bottom: 20px;
+}
+
+.who-card p {
+  color: #666;
+
+  line-height: 1.9;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .who-title {
+    font-size: 2.2rem;
+  }
+
+  .who-card {
+    padding: 30px 24px;
+  }
+
+}
+
+/* =====================================================
+AGILE AWARENESS BOX
+===================================================== */
+
+.agile-awareness-box {
+  margin-top: 70px;
+
+  padding: 35px 40px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061a28,
+      #0d2f45
+    );
+
+  display: flex;
+  gap: 28px;
+
+  align-items: flex-start;
+
+  color: white;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* GLOW */
+
+.agile-awareness-box::before {
+  content: '';
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  background:
+    radial-gradient(
+      rgba(88,193,255,0.18),
+      transparent 70%
+    );
+
+  top: -80px;
+  right: -80px;
+}
+
+/* ICON */
+
+.agile-awareness-icon {
+  min-width: 80px;
+  height: 80px;
+
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1476b9,
+      #58c1ff
+    );
+
+  box-shadow:
+    0 15px 35px rgba(20,118,185,0.22);
+}
+
+/* TEXT */
+
+.agile-awareness-box h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+
+  margin-bottom: 18px;
+
+  color: white;
+}
+
+.agile-awareness-box p {
+  color: rgba(255,255,255,0.82);
+
+  line-height: 2;
+
+  margin: 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .agile-awareness-box {
+    flex-direction: column;
+
+    padding: 30px 24px;
+  }
+
+  .agile-awareness-box h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* =====================================================
+PREMIUM HOVER GLOW EFFECT
+===================================================== */
+
+.interactive-card {
+  position: relative;
+
+  overflow: hidden;
+
+  isolation: isolate;
+}
+
+/* GLOW */
+
+.interactive-card::before {
+  content: '';
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  background:
+    radial-gradient(
+      rgba(88,193,255,0.18),
+      transparent 70%
+    );
+
+  top: var(--y);
+  left: var(--x);
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition:
+    opacity 0.3s ease;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.interactive-card:hover::before {
+  opacity: 1;
+}
+
+/* CONTENT ABOVE GLOW */
+
+.interactive-card > * {
+  position: relative;
+
+  z-index: 1;
+}

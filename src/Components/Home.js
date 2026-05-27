@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import heroImage from "../Img/content.jpeg";
 import tab1Image from "../Img/Tabs/tab-1.png";
 import tab2Image from "../Img/Tabs/tab-2.png";
@@ -10,6 +10,45 @@ import course2Image from "../Img/course-2.jpg";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  useEffect(() => {
+
+  const cards =
+    document.querySelectorAll(
+      ".interactive-card"
+    );
+
+  cards.forEach((card) => {
+
+    card.addEventListener(
+      "mousemove",
+      (e) => {
+
+        const rect =
+          card.getBoundingClientRect();
+
+        const x =
+          e.clientX - rect.left;
+
+        const y =
+          e.clientY - rect.top;
+
+        card.style.setProperty(
+          "--x",
+          `${x}px`
+        );
+
+        card.style.setProperty(
+          "--y",
+          `${y}px`
+        );
+
+      }
+    );
+
+  });
+
+}, []);
+
   const [webinarForm, setWebinarForm] = useState({
     name: "",
     email: "",
@@ -410,6 +449,197 @@ WHAT MAKES US DIFFERENT
           </div>
         </div>
       </section>
+
+{/* /* =======================================================
+WHO IS THIS FOR SECTION
+======================================================= */}
+
+<section className="who-section section">
+
+  <div className="container">
+
+    {/* HEADING */}
+
+    <div
+      className="who-heading text-center"
+      data-aos="fade-up"
+    >
+
+      <span className="who-badge">
+        WHO IS THIS FOR?
+      </span>
+
+      <h2 className="who-title mt-4">
+
+        Designed for
+        <span> Career Growth & Transition</span>
+
+      </h2>
+
+      <p className="who-description mt-4">
+
+        Whether you're starting your IT journey,
+        transitioning careers or upgrading your
+        Business Analysis skills — CareerForge
+        is designed to help you become industry-ready.
+
+      </p>
+
+    </div>
+
+    {/* CARDS */}
+
+    <div className="row gy-4 mt-5">
+
+      {/* FRESHERS */}
+
+      <div
+        className="col-lg-3 col-md-6"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+
+        <div className="who-card interactive-card">
+
+          <div className="who-icon">
+            🎓
+          </div>
+
+          <h3>Freshers</h3>
+
+          <p>
+
+            Start your IT career with practical
+            Business Analysis, Agile and AI skills
+            used in real companies.
+
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* NON IT */}
+
+      <div
+        className="col-lg-3 col-md-6"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+
+        <div className="who-card interactive-card">
+
+          <div className="who-icon">
+            🚀
+          </div>
+
+          <h3>Non-IT Professionals</h3>
+
+          <p>
+
+            Transition into the IT industry through
+            structured Business Analyst training
+            and mentorship.
+
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* QA / DEVELOPERS */}
+
+      <div
+        className="col-lg-3 col-md-6"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+
+        <div className="who-card interactive-card">
+
+          <div className="who-icon">
+            💻
+          </div>
+
+          <h3>QA & Developers</h3>
+
+          <p>
+
+            Upgrade your career by learning
+            stakeholder communication, Agile
+            workflows and BA responsibilities.
+
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* EXISTING BAs */}
+
+      <div
+        className="col-lg-3 col-md-6"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+
+        <div className="who-card interactive-card">
+
+          <div className="who-icon">
+            🤖
+          </div>
+
+          <h3>Existing Business Analysts</h3>
+
+          <p>
+
+            Enhance your practical BA skills
+            with Agile tools, AI-powered workflows
+            and real project exposure.
+
+          </p>
+
+        </div>
+
+      </div>
+
+      <div
+  className="agile-awareness-box mt-5"
+  data-aos="fade-up"
+>
+
+  <div className="agile-awareness-icon">
+    🚀
+  </div>
+
+  <div>
+
+    <h3>
+      Agile Knowledge Benefits Every IT Professional
+    </h3>
+
+    <p>
+
+      Even if you're planning to become a Developer,
+      QA Engineer or any other IT professional,
+      most modern companies work in Agile environments.
+
+      You'll participate in sprint planning,
+      standups, retrospectives and other Agile ceremonies —
+      so understanding Agile workflows gives you
+      a strong career advantage.
+
+    </p>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* =======================================================
 AI POWERED BUSINESS ANALYSIS
@@ -822,7 +1052,7 @@ FREE WEBINAR SECTION
 
               {success ? (
                 <div className="webinar-success-box">
-                  🎉 Registration Successful! Congratulations on taking the
+                  Registration Successful! Congratulations on taking the
                   first step towards your Business Analyst journey. You'll
                   receive webinar details on your email shortly.
                 </div>
@@ -1016,7 +1246,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-nut modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1031,7 +1261,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-shuffle modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1046,7 +1276,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="700"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-x-diamond modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1061,7 +1291,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="800"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-camera-video modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1076,7 +1306,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="900"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-command modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1091,7 +1321,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="1200"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-diagram-3-fill modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1106,7 +1336,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="1000"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-robot modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1121,7 +1351,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="1100"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-stars modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1136,7 +1366,7 @@ FREE WEBINAR SECTION
               data-aos="fade-up"
               data-aos-delay="600"
             >
-              <div className="modern-tool-card">
+              <div className="modern-tool-card interactive-card">
                 <i className="bi bi-star modern-tool-icon"></i>
                 <h3>
                   <Link to="/" className="stretched-link">
@@ -1174,7 +1404,7 @@ FREE WEBINAR SECTION
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div className="modern-home-course-card">
+              <div className="modern-home-course-card interactive-card">
                 <img
                   src={course1Image}
                   className="img-fluid"
@@ -1220,7 +1450,7 @@ FREE WEBINAR SECTION
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <div className="modern-home-course-card">
+              <div className="modern-home-course-card interactive-card">
                 <img
                   src={course2Image}
                   className="img-fluid"
